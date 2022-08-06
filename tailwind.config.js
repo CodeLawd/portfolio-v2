@@ -1,24 +1,23 @@
 /** @type {import('tailwindcss').Config} */
 
 module.exports = {
-  content: [
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
-  ],
-  darkMode: "class", 
+  content: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
         primary: "#0A192F",
-        secondary: "#5FF1D0",
+        secondary: "#FAC748",
         gray: "#CCD6F6",
       },
       fontFamily: {
         sfmono: ["SF Mono", "monospace"],
-        calibreBlack: ["Calibre Black", "sans-serif"],
-        calibre: ["Calibre", "sans-serif"],
+        mouse: ["Mouse Memoirs", "sans-serif"],
+        // calibreBlack: ["Calibre Black", "sans-serif"],
+        // calibre: ["Calibre", "sans-serif"],
+        manrope: ["Manrope", "sans-serif"],
       },
     },
   },
   plugins: [],
-}
+};

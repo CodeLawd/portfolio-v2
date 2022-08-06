@@ -1,85 +1,88 @@
-import React, { useState, useEffect } from "react"
+import React, { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
-import Button from "../shared/Button"
-import { MenuIcon, LightningBoltIcon, SunIcon, MoonIcon } from '@heroicons/react/solid';
+import Button from "../shared/Button";
+import { MenuIcon, LightningBoltIcon, SunIcon, MoonIcon } from "@heroicons/react/solid";
+import { motion } from "framer-motion";
+import { navItem } from "../../helpers/data";
+import Link from "next/link";
 
 const Navbar = () => {
-    const [mounted, setMounted] = useState(false);
-    const navItem = [
-        {
-            id: "00",
-            title: "About",
-            destination: "about"
-        },
-        {
-            id: "01",
-            title: "Experience",
-            destination: "experience"
-        },
-        {
-            id: "02",
-            title: "Work",
-            destination: "work"
-        },
-        {
-            id: "03",
-            title: "Blog",
-            destination: "blog"
-        },
-        {
-            id: "04",
-            title: "Contact",
-            destination: "contact"
-        },
-    ]
+  const [mounted, setMounted] = useState(false);
+  const [scroll, setScroll] = useState(false);
 
-    useEffect(() => {
-        setMounted(true);
-    }, [])
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
-    const { systemTheme, theme, setTheme } = useTheme();
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", () => setScroll(window.pageYOffset > 100));
+    }
+  }, []);
 
-    const renderThemeChanger = () => {
-        if (!mounted) return null;
+  const { systemTheme, theme, setTheme } = useTheme();
 
-        const currentTheme = theme === "system" ? systemTheme : theme;
+  const renderThemeChanger = () => {
+    if (!mounted) return null;
 
-        if (currentTheme === "dark") {
-            return (
-                <SunIcon className="h-6 w-6 mx-5 flex-shrink-0 mr-3 text-secondary" role="button" onClick={() => setTheme('light')} />
-            )
-        }
+    const currentTheme = theme === "system" ? systemTheme : theme;
 
-        else {
-            return (
-                <MoonIcon className="h-6 w-6 mx-5 flex-shrink-0 mr-3 text-secondary" role="button" onClick={() => setTheme('dark')} />
-            )
-        }
-    };
+    if (currentTheme === "dark") {
+      return (
+        <SunIcon
+          className="h-6 w-6 flex-shrink-0 text-secondary"
+          role="button"
+          onClick={() => setTheme("light")}
+        />
+      );
+    } else {
+      return (
+        <MoonIcon
+          className="h-6 w-6 flex-shrink-0 text-secondary"
+          role="button"
+          onClick={() => setTheme("dark")}
+        />
+      );
+    }
+  };
 
-    return (
-        <div className="flex items-center justify-between py-5 px-6 md:px-12 shadow-lg  sticky top-0 backdrop-blur">
-            <div className="border border-secondary px-2 pt-1">
-                <span className="font-bold font-sfmono text-lg text-secondary">JA</span>
-            </div>
+  return (
+    <div
+      className={`flex items-center justify-between py-3 px-6 md:px-20 sticky top-0 backdrop-blur ${
+        scroll && "shadow-sm"
+      }`}
+    >
+      <Link href="/">
+        <div className="border border-secondary px-2 pt-1 cursor-pointer">
+          <span className="font-bold font-sfmono text-lg text-secondary">JA</span>
+        </div>
+      </Link>
 
-            <div>
-                {/* <MenuIcon /> */}
-                <MenuIcon className="text-secondary h-8 w-8 cursor-pointer block md:hidden" />
-            </div>
+      <div>
+        {/* <MenuIcon /> */}
+        <MenuIcon className="text-secondary h-8 w-8 cursor-pointer block md:hidden" />
+      </div>
 
-            <div className="font-sfmono md:flex items-center hidden">
-                {navItem.map(({ title, id, destination }) => (
-                    <a href={`#${destination}`} key={id} className="">
-                        <span className="mx-4 cursor-pointer text-secondary text-sm">{id}.<span className="text-gray hover:text-secondary">{title}</span> </span>
-                    </a>
-                ))}
+      <div className="font-sfmono md:flex items-center hidden gap-5">
+        {navItem.map(({ title, id, destination }) => (
+          <motion.a
+            whileHover={{ y: [0, -2] }}
+            transition={{ duration: 0.25, type: "tween" }}
+            href={`#${destination}`}
+            key={id}
+            className=""
+          >
+            <span className="cursor-pointer text-secondary text-xs">
+              {id}.<span className="text-gray hover:text-secondary">{title}</span>{" "}
+            </span>
+          </motion.a>
+        ))}
 
-                {renderThemeChanger()}
-                <Button text="Resume" size="sm" />
-            </div>
-        </div >
-    )
-}
+        {renderThemeChanger()}
+        <Button text="Resume" size="xs" />
+      </div>
+    </div>
+  );
+};
 
-export default Navbar
+export default Navbar;

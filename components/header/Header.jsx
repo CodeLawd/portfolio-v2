@@ -1,19 +1,82 @@
-import React from 'react'
-import Button from '../shared/Button'
+import React from "react";
+import Button from "../shared/Button";
+import { GoLightBulb } from "react-icons/go";
+import { motion } from "framer-motion";
+import { socialIcon } from "../../helpers/data";
 
 const Header = () => {
   return (
-    <div className="px-6 md:px-12 mx-auto flex items-center md:py-44 bg-cover bg-no-repeat w-full h-[92vh] md:h-auto">
-      <div className='max-w-6xl mx-auto -mt-20 sm:mt-0'>
-        <span className='font-sfmono text-secondary'>Hi, my name is</span>
-        <h1 className='text-gray font-calibreBlack text-3xl md:text-5xl lg:text-7xl mt-4 font-bold tracking-wider'>Joshua Alexander.</h1>
-        <h1 className='text-[#8892B0] font-calibreBlack pt-2 md:pt-0 text-3xl md:text-5xl lg:text-6xl font-extrabold tracking-wider'>I love solving problems with code.</h1>
-        <p className='text-[#8892B0] py-3 lg:w-[55%] text-xl mt-5 mb-6'>I'm a <span className="text-secondary">Software developer</span> who specializes in JavaScript Technologies (Node.js, Express, React/Next and MongoDB) to <span className="text-secondary"> solve business problems. </span> Currently, I’m focused on building accessible, human-centered products at  <span className="text-secondary">Brooks and Blake</span>.</p>
+    <div className="px-6 md:px-12 md:max-w-[80%] mx-auto flex items-center w-full h-[100vh] md:h-[85vh] relative">
+      <div className="max-w-6xl mx-auto -mt-20 sm:mt-0">
+        <span className="text-sm text-secondary font-sfmono">Hi, my name is</span>
+        <h1 className="text-gray font-mouse text-5xl md:text-7xl mt-4 font-black tracking-wider">
+          Joshua Alexander<span className="text-secondary animate-pulse">.</span>
+        </h1>
+        <h1 className="text-[#8892B0] py-2 font-mouse text-4xl md:text-6xl font-extrabold tracking-wider">
+          I bring{" "}
+          <span className="text-secondary">
+            ideas <GoLightBulb className="inline-flex w-8 animate-bounce" />{" "}
+          </span>
+          to reality<span className="text-secondary animate-pulse">.</span>
+        </h1>
+        <p className="text-[#8892B0] py-3 lg:w-[65%] mt-5 mb-6 leading-8 md:leading-6 text-base">
+          I'm a <span className="text-secondary">Software developer</span> who specializes in JavaScript Technologies
+          (Node.js, Express, React/Next and MongoDB) to{" "}
+          <span className="text-secondary"> solve business problems. </span> Currently, I’m focused on building
+          accessible, human-centered products at{" "}
+          <span className="text-secondary">
+            <a href="https://radartrail.com" target="_blank" rel="noreferrer">
+              Radartrail
+            </a>
+          </span>
+          .
+        </p>
 
-        <a target="_blank" href="https://docs.google.com/document/d/1prnCNhc6ovyO1CO_mj-xgzfGDZvSIovRAaZFxyOTMfQ/edit?usp=sharing" className="border hover:bg-[#5ff1cf33] text-secondary border-secondary rounded-md px-8 py-3 text-lg ml-2"> Checkout my resume!</a>
+        <motion.a
+          whileHover={{ scale: [1, 1.2] }}
+          transition={{ duration: 0.4, type: "tween" }}
+          target="_blank"
+          rel="noreferrer"
+          href="https://docs.google.com/document/d/1prnCNhc6ovyO1CO_mj-xgzfGDZvSIovRAaZFxyOTMfQ/edit?usp=sharing"
+          className="border text-secondary border-secondary rounded-lg px-8 py-3 text-xs ml-2"
+        >
+          {" "}
+          Checkout my resume!
+        </motion.a>
+      </div>
+
+      <div className="fixed bottom-0 left-[5rem] hidden md:flex flex-col items-center gap-8">
+        {socialIcon?.map(({ icon, link }, idx) => (
+          <motion.a
+            whileHover={{ y: [0, -4] }}
+            transition={{ duration: 0.2, type: "tween" }}
+            href={link}
+            rel="noreferrer"
+            key={idx}
+            target="_blank"
+            className="hover:text-secondary text-gray"
+          >
+            {icon}
+          </motion.a>
+        ))}
+        <div className="w-[1px] h-[80px] bg-gray" />
+      </div>
+
+      <div className="fixed bottom-0 -right-5 flex flex-col items-center gap-32">
+        <motion.a
+          // whileHover={{ x: [0, -4] }}
+          // transition={{ duration: 0.2, type: "tween" }}
+          rel="noreferrer"
+          target="_blank"
+          className="text-gray font-sfmono text-xstracking-wider"
+          style={{ textOrientation: "sideways", writingMode: "vertical-rl", letterSpacing: "2px" }}
+        >
+          alexander.joshua2018@gmail.com
+        </motion.a>
+        <div className="w-[1px] h-[80px] bg-gray" />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
