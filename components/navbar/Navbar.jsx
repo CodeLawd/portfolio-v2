@@ -29,26 +29,18 @@ const Navbar = () => {
 
     if (currentTheme === "dark") {
       return (
-        <SunIcon
-          className="h-6 w-6 flex-shrink-0 text-secondary"
-          role="button"
-          onClick={() => setTheme("light")}
-        />
+        <SunIcon className="h-6 w-6 flex-shrink-0 text-secondary" role="button" onClick={() => setTheme("light")} />
       );
     } else {
       return (
-        <MoonIcon
-          className="h-6 w-6 flex-shrink-0 text-secondary"
-          role="button"
-          onClick={() => setTheme("dark")}
-        />
+        <MoonIcon className="h-6 w-6 flex-shrink-0 text-secondary" role="button" onClick={() => setTheme("dark")} />
       );
     }
   };
 
   return (
     <div
-      className={`flex items-center justify-between py-3 px-6 md:px-20 sticky top-0 backdrop-blur ${
+      className={`flex z-50 items-center bg-primary dark:bg-transparent justify-between py-3 px-6 md:px-20 sticky top-0 backdrop-blur ${
         scroll && "shadow-sm"
       }`}
     >
@@ -68,7 +60,7 @@ const Navbar = () => {
           <motion.a
             whileHover={{ y: [0, -2] }}
             transition={{ duration: 0.25, type: "tween" }}
-            href={`#${destination}`}
+            href={`/#${destination}`}
             key={id}
             className=""
           >

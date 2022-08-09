@@ -1,8 +1,14 @@
 export { default as Navbar } from "./navbar/Navbar";
 export { default as Header } from "./header/Header";
 export { default as Button } from "./shared/Button";
+export { default as SectionTitle } from "./shared/SectionTitle";
 export { default as About } from "./about/About";
 export { default as AboutInfo } from "./about/AboutInfo";
 export { default as Tech } from "./about/Tech";
 export { default as Experience } from "./experience/Experience";
 export { default as ActiveWork } from "./experience/ActiveWork";
+export { default as FeatureProject } from "./works/FeatureProject";
+export { default as OtherProjects } from "./works/OtherProjects";
+export { default as Article } from "./articles/Article";
+export { default as Contact } from "./contact/Contact";
+export { default as Footer } from "./footer/Footer";

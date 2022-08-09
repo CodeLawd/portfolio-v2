@@ -8,8 +8,8 @@ const Header = () => {
   return (
     <div className="px-6 md:px-12 md:max-w-[80%] mx-auto flex items-center w-full h-[100vh] md:h-[85vh] relative">
       <div className="max-w-6xl mx-auto -mt-20 sm:mt-0">
-        <span className="text-sm text-secondary font-sfmono">Hi, my name is</span>
-        <h1 className="text-gray font-mouse text-5xl md:text-7xl mt-4 font-black tracking-wider">
+        <span className="text-sm text-secondary font-sfmono dark:bg-none bg-primary py-2 px-4 rounded-md">Hi, my name is</span>
+        <h1 className="dark:text-gray text-primary font-mouse text-5xl md:text-7xl mt-4 font-black tracking-wider">
           Joshua Alexander<span className="text-secondary animate-pulse">.</span>
         </h1>
         <h1 className="text-[#8892B0] py-2 font-mouse text-4xl md:text-6xl font-extrabold tracking-wider">
@@ -54,26 +54,27 @@ const Header = () => {
             rel="noreferrer"
             key={idx}
             target="_blank"
-            className="hover:text-secondary text-gray"
+            className="dark:hover:text-secondary dark:text-gray text-primary"
           >
             {icon}
           </motion.a>
         ))}
-        <div className="w-[1px] h-[80px] bg-gray" />
+        <div className="w-[1px] h-[80px] dark:bg-gray bg-primary" />
       </div>
 
-      <div className="fixed bottom-0 -right-5 flex flex-col items-center gap-32">
+      <div className="fixed bottom-0 right-16 hidden md:flex flex-col items-center gap-5">
         <motion.a
-          // whileHover={{ x: [0, -4] }}
-          // transition={{ duration: 0.2, type: "tween" }}
+          href="mailto:alexander.joshua2018@gmail.com"
+          whileHover={{ y: [0, -4] }}
+          transition={{ duration: 0.2, type: "tween" }}
           rel="noreferrer"
           target="_blank"
-          className="text-gray font-sfmono text-xstracking-wider"
+          className="dark:text-gray text-primary font-sfmono text-xstracking-wider text-xs dark:hover:text-secondary cursor-pointer"
           style={{ textOrientation: "sideways", writingMode: "vertical-rl", letterSpacing: "2px" }}
         >
           alexander.joshua2018@gmail.com
         </motion.a>
-        <div className="w-[1px] h-[80px] bg-gray" />
+        <div className="w-[1px] h-[80px] dark:bg-gray bg-primary" />
       </div>
     </div>
   );
