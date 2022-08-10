@@ -6,10 +6,7 @@ import { otherProjects } from "../../helpers/data";
 
 const OtherProjects = () => {
   return (
-    <div
-      className="px-6 md:px-12 pb-10 md:max-w-[80%] m-auto pt-20 flex flex-col items-start justify-center w-full"
-      id="#works"
-    >
+    <div className="px-6 md:px-12 pb-10 md:max-w-[80%] m-auto pt-20 flex flex-col items-start justify-center w-full">
       <div className="text-center">
         <h2 className="text-gray font-bold text-2xl mb-10">That's Not All...</h2>
 

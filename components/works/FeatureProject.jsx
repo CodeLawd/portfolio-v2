@@ -11,8 +11,8 @@ const FeatureProject = () => {
 
   return (
     <div
-      className="px-6 md:px-12 pb-10 md:max-w-[80%] m-auto pt-20 flex flex-col items-start justify-center w-full"
-      id="#works"
+      className="px-6 md:px-12 pb-10 md:max-w-[80%] m-auto pt-32 flex flex-col items-start justify-center w-full"
+      id="work"
     >
       <SectionTitle id="02" title="Some things I've built" />
 
@@ -23,7 +23,7 @@ const FeatureProject = () => {
           className={` ${!isOdd(idx) && "flex-row-reverse"} flex gap-5 my-10 relative items-center`}
           key={idx}
         >
-          <div className="w-[60%] h-full">
+          <div className="hidden md:block w-[60%] h-full">
             <Image
               src={image}
               layout="responsive"
@@ -35,24 +35,30 @@ const FeatureProject = () => {
             />
           </div>
 
-          <div className={`${!isOdd(idx) ? "text-left" : "text-right"} w-[40%] h-full`} key={idx}>
+          <div
+            className={`${
+              !isOdd(idx) ? "md:text-left" : "md:text-right"
+            } w-full md:w-[40%] h-full bg-[#10243f] md:bg-transparent p-8 rounded-md md:p-0`}
+            key={idx}
+            // style={{ backgroundImage: url(`${image}`) }}
+          >
             <p className="font-sfmono text-xs text-secondary">Features Project</p>
             <span className="text-gray font-bold text-2xl">{title}</span>
             <div
               className={`${
-                !isOdd(idx) ? "" : "right-32"
-              } p-5 text-sm text-le bg-[#10243f] rounded-md shadow-md relative my-5 z-10 w-[130%]`}
+                !isOdd(idx) ? "" : "md:right-32"
+              } p-0 md:p-5 text-sm  md:bg-[#10243f] rounded-md shadow-md relative my-5 z-10 md:w-[130%]`}
             >
               <span className="text-gray">{description}</span>
             </div>
-            <div className={`${!isOdd(idx) ? "justify-start" : "justify-end"} flex gap-4`}>
+            <div className={`${!isOdd(idx) ? "justify-start" : "md:justify-end"} flex gap-4`}>
               {stack?.map((stack, idx) => (
                 <span key={idx} className="text-xs font-sfmono text-gray capitalize">
                   {stack}
                 </span>
               ))}
             </div>
-            <div className={`${!isOdd(idx) ? "justify-start" : "justify-end"} flex gap-5 mt-5`}>
+            <div className={`${!isOdd(idx) ? "justify-start" : "md:justify-end"} flex gap-5 mt-5 overflow-x-scroll`}>
               {links?.map(({ url, icon }, idx) => (
                 <a href={url} target="_blank" rel="noreferrer" key={idx} className="text-gray hover:text-secondary">
                   {icon}

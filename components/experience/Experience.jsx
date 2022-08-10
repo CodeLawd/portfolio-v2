@@ -7,18 +7,19 @@ const Experience = () => {
 
   return (
     <div
-      className="px-6 md:px-12 pb-10 md:max-w-[60%] mx-auto my-28 flex flex-col items-start justify-center w-full"
+      className="px-6 md:px-12 pb-10 md:max-w-[60%] mx-auto pt-28 h-[70vh] flex flex-col items-start justify-center w-full"
       id="experience"
     >
       <SectionTitle id="01" title="Where I've worked" />
-      <div className="mt-8 flex gap-8">
-        <div className="w-[12rem]">
+      <div className="mt-8 flex flex-col md:flex-row gap-8">
+        <div className="md:w-[30%] flex md:block overflow-x-scroll">
           {companyName?.map(({ name, tab }, idx) => (
-            <div key={idx} className={`${activeTab === tab ? "border-0 " : "border-l border-gray-100"}`}>
+            <div key={idx} className={`${activeTab === tab ? "md:border-0 " : "border-b-[2.5px] md:border-l md:border-gray-100"} mx-3`}>
               <p
                 className={`${
-                  activeTab === tab && " bg-secondary bg-opacity-10 text-secondary border-l-[2.5px] border-secondary"
-                } p-4   text-gray font-sfmono text-xs cursor-pointer`}
+                  activeTab === tab &&
+                  "md:bg-secondary md:bg-opacity-10 text-secondary  md:border-l-[2.5px] border-secondary"
+                }text-gray font-sfmono text-xs cursor-pointer`}
                 onClick={() => setActiveTab(tab)}
               >
                 {name}

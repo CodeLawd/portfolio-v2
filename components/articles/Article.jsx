@@ -62,17 +62,12 @@ const Article = () => {
   return (
     <div
       className="px-6 md:px-12 pb-10 md:max-w-[80%] mx-auto pt-20 flex flex-col items-center justify-center w-full"
-      id="#article"
+      id="blog"
     >
       <SectionTitle id="03" title="I do a little bit of writing" />
       <div className="mt-10 text-center">
         {articles?.slice(0, more).map(({ brief, coverImage, dateAdded, slug, title }, idx) => (
-          <motion.div
-            whileInView={{ y: [20, 0] }}
-            transition={{ duration: 0.5 }}
-            key={idx}
-            className="mb-14 text-left"
-          >
+          <motion.div whileInView={{ y: [20, 0] }} transition={{ duration: 0.5 }} key={idx} className="mb-14 text-left">
             <span className="text-xs text-secondary">{formatDate(dateAdded)}</span>
             <a
               href={`https://codelawd.hashnode.dev/${slug}`}

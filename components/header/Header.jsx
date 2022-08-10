@@ -6,9 +6,16 @@ import { socialIcon } from "../../helpers/data";
 
 const Header = () => {
   return (
-    <div className="px-6 md:px-12 md:max-w-[80%] mx-auto flex items-center w-full h-[100vh] md:h-[85vh] relative">
+    <motion.div
+      // whileInView={{ scale: [200, 0] }}
+      // animate={{ scale: [200, 0] }}
+      // transition={{ duration: .3, ease: "easeIn", repeat: false }}
+      className="px-6 md:px-12 md:max-w-[80%] mx-auto flex items-center w-full h-[100vh] md:h-[85vh] relative"
+    >
       <div className="max-w-6xl mx-auto -mt-20 sm:mt-0">
-        <span className="text-sm text-secondary font-sfmono dark:bg-none bg-primary py-2 px-4 rounded-md">Hi, my name is</span>
+        <span className="text-sm text-secondary font-sfmono dark:bg-none bg-primary py-2 px-4 rounded-md">
+          Hi, my name is
+        </span>
         <h1 className="dark:text-gray text-primary font-mouse text-5xl md:text-7xl mt-4 font-black tracking-wider">
           Joshua Alexander<span className="text-secondary animate-pulse">.</span>
         </h1>
@@ -76,7 +83,7 @@ const Header = () => {
         </motion.a>
         <div className="w-[1px] h-[80px] dark:bg-gray bg-primary" />
       </div>
-    </div>
+    </motion.div>
   );
 };
 

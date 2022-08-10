@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
 import Button from "../shared/Button";
-import { MenuIcon, LightningBoltIcon, SunIcon, MoonIcon } from "@heroicons/react/solid";
+import { MenuAlt3Icon, SunIcon, MoonIcon } from "@heroicons/react/solid";
 import { motion } from "framer-motion";
 import { navItem } from "../../helpers/data";
 import Link from "next/link";
@@ -51,8 +51,8 @@ const Navbar = () => {
       </Link>
 
       <div>
-        {/* <MenuIcon /> */}
-        <MenuIcon className="text-secondary h-8 w-8 cursor-pointer block md:hidden" />
+        {/* <MenuAlt3Icon /> */}
+        <MenuAlt3Icon className="text-secondary h-8 w-8 cursor-pointer block md:hidden" />
       </div>
 
       <div className="font-sfmono md:flex items-center hidden gap-5">

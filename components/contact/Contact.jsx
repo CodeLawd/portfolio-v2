@@ -5,12 +5,14 @@ const Contact = () => {
   return (
     <div
       className="px-6 md:px-12 pb-10 md:max-w-[80%] mt-32 mx-auto flex flex-col items-start justify-center w-full"
-      id="#experience"
+      id="contact"
     >
       <SectionTitle id="04" title="say hello" />
 
       <div className="mt-10 text-center mx-auto">
-        <h2 className="text-gray text-4xl font-bold">Get In Touch</h2>
+        <h2 className="text-gray text-4xl font-bold">
+          Take a coffee ☕ and let's talk <span className="text-secondary">.</span>
+        </h2>
         <p className="max-w-xl my-8 text-gray leading-7 text-xl">
           Got a question or proposal, or just want to say hello? <br /> <br /> Go ahead.
         </p>

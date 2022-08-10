@@ -126,7 +126,7 @@ export const featuredProjects = [
     image: "/facile.png",
     description:
       "Facile is a tutorial based learning platform. With Facile every course content is a tutorial. At the end of each tutorial, you will have successfully built a project and understand how coding in the real world is.",
-    stack: ["Next", "Tailwind", "mongoDB", "go", "node", "aws", "docker"],
+    stack: ["Next", "Tailwind", "mongoDB", "go", "node"],
     links: [
       {
         url: "https://github.com",
