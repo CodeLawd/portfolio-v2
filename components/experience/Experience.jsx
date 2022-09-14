@@ -11,15 +11,15 @@ const Experience = () => {
       id="experience"
     >
       <SectionTitle id="01" title="Where I've worked" />
-      <div className="mt-8 flex flex-col md:flex-row gap-8">
-        <div className="md:w-[30%] flex md:block overflow-x-scroll">
+      <div className="mt-8 flex flex-col md:flex-row gap-8 overflow-hidden">
+        <div className="md:w-[30%] flex md:block overflow-hidden">
           {companyName?.map(({ name, tab }, idx) => (
-            <div key={idx} className={`${activeTab === tab ? "md:border-0 " : "border-b-[2.5px] md:border-l md:border-gray-100"} mx-3`}>
+            <div key={idx} className={`${activeTab === tab ? "md:border-0 " : "border-b-[2.5px] md:border-b-0 md:border-l md:border-gray-100"} mx-3`}>
               <p
                 className={`${
                   activeTab === tab &&
                   "md:bg-secondary md:bg-opacity-10 text-secondary  md:border-l-[2.5px] border-secondary"
-                }text-gray font-sfmono text-xs cursor-pointer`}
+                }text-gray font-sfmono text-xs cursor-pointer p-4`}
                 onClick={() => setActiveTab(tab)}
               >
                 {name}
