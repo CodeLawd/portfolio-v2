@@ -29,6 +29,7 @@ const Navbar = () => {
 
     if (currentTheme === "dark") {
       return (
+        // <input type="checkbox" className="toggle toggle-primary" checked onClick={() => setTheme("light")} />
         <SunIcon className="h-6 w-6 flex-shrink-0 text-secondary" role="button" onClick={() => setTheme("light")} />
       );
     } else {

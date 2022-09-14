@@ -16,37 +16,32 @@ const OtherProjects = () => {
               <motion.div
                 whileHover={{ y: [0, -8] }}
                 transition={{ duration: 0.2, type: "spring" }}
-                className="rounded-md bg-[#10243f] p-8 group text-left cursor-pointer"
+                className="rounded-md bg-[#10243f] p-8 group text-left cursor-pointer flex flex-col justify-between"
               >
-                <div className="flex flex-col justify-between">
-                  <div className="">
-                    <div className="flex items-center justify-between mb-8">
-                      <BsFolder className="w-9 h-9 text-secondary" />
-                      <div className="flex gap-5">
-                        <a href={url} target="_blank" rel="noreferrer">
-                          <FiExternalLink className="w-5 h-5 text-gray hover:text-secondary" />
+                <div className="h-[15rem]">
+                  <div className="flex items-center justify-between mb-8">
+                    <BsFolder className="w-9 h-9 text-secondary" />
+                    <div className="flex gap-5">
+                      <a href={url} target="_blank" rel="noreferrer">
+                        <FiExternalLink className="w-5 h-5 text-gray hover:text-secondary" />
+                      </a>
+                      {github && (
+                        <a href={github} target="_blank" rel="noreferrer">
+                          <FiGithub className="w-5 h-5 text-gray hover:text-secondary" />
                         </a>
-                        {github && (
-                          <a href={github} target="_blank" rel="noreferrer">
-                            <FiGithub className="w-5 h-5 text-gray hover:text-secondary" />
-                          </a>
-                        )}
-                      </div>
+                      )}
                     </div>
+                  </div>
+                  <p className="text-gray font-bold text-lg mb-3 inline-block group-hover:text-secondary">{title}</p>
+                  <p className="text-sm text-[#8893AF] leading-6">{description}</p>
+                </div>
 
-                    <span className="text-gray font-bold text-lg mb-3 inline-block group-hover:text-secondary">
-                      {title}
+                <div className="flex gap-4 mt-8">
+                  {stack?.map((stack, idx) => (
+                    <span className="text-xs font-sfmono text-gray capitalize" key={idx}>
+                      {stack}
                     </span>
-                    <p className="text-sm text-gray leading-6">{description}</p>
-                  </div>
-
-                  <div className="flex gap-4 mt-8">
-                    {stack?.map((stack, idx) => (
-                      <span className="text-xs font-sfmono text-gray capitalize" key={idx}>
-                        {stack}
-                      </span>
-                    ))}
-                  </div>
+                  ))}
                 </div>
               </motion.div>
             </a>

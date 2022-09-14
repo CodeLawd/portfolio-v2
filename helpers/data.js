@@ -175,6 +175,13 @@ export const featuredProjects = [
 
 export const otherProjects = [
   {
+    url: "https://sme.radartrail.com/",
+    github: "#",
+    title: "Radartrail SME Platform",
+    description: "Second iteration of my personal website. Built with a NextJS and Tailwind.",
+    stack: ["NextJS", "Tailwind", "Framer Motion"],
+  },
+  {
     url: "https://codelawd.vercel.app",
     github: "https://github.com/CodeLawd/portfolio-v2",
     title: "Personal Portfolio V2",
