@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useTheme } from "next-themes";
+// import { useTheme } from "next-themes";
 import Button from "../shared/Button";
 import { MenuAlt3Icon, SunIcon, MoonIcon } from "@heroicons/react/solid";
 import { motion } from "framer-motion";
@@ -20,29 +20,37 @@ const Navbar = () => {
     }
   }, []);
 
-  const { systemTheme, theme, setTheme } = useTheme();
+  // const { systemTheme, theme, setTheme } = useTheme();
 
-  const renderThemeChanger = () => {
-    if (!mounted) return null;
+  // const renderThemeChanger = () => {
+  //   if (!mounted) return null;
 
-    console.log(theme, systemTheme);
-    const currentTheme = theme === "light" ? theme : theme;
+  //   console.log(theme, systemTheme);
+  //   const currentTheme = theme === "light" ? setTheme : theme;
 
-    if (currentTheme === "dark") {
-      return (
-        // <input type="checkbox" className="toggle toggle-primary" checked onClick={() => setTheme("light")} />
-        <SunIcon className="h-6 w-6 flex-shrink-0 text-secondary" role="button" onClick={() => setTheme("light")} />
-      );
-    } else {
-      return (
-        <MoonIcon className="h-6 w-6 flex-shrink-0 text-secondary" role="button" onClick={() => setTheme("dark")} />
-      );
-    }
-  };
+  //   if (currentTheme === "dark") {
+  //     return (
+  //       // <input type="checkbox" className="toggle toggle-primary" checked onClick={() => setTheme("light")} />
+  //       <SunIcon
+  //         className="h-6 w-6 flex-shrink-0 text-primary dark:text-secondary"
+  //         role="button"
+  //         onClick={() => setTheme("light")}
+  //       />
+  //     );
+  //   } else {
+  //     return (
+  //       <MoonIcon
+  //         className="h-6 w-6 flex-shrink-0 text-primary dark:text-secondary"
+  //         role="button"
+  //         onClick={() => setTheme("dark")}
+  //       />
+  //     );
+  //   }
+  // };
 
   return (
     <div
-      className={`flex z-50 items-center bg-primary dark:bg-transparent justify-between py-3 px-6 md:px-20 sticky top-0 backdrop-blur ${
+      className={`flex z-50 items-center bg-primary bg-transparent justify-between py-3 px-6 md:px-20 sticky top-0 backdrop-blur ${
         scroll && "shadow-sm"
       }`}
     >

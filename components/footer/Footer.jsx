@@ -14,7 +14,7 @@ const Footer = () => {
             key={idx}
             rel="noreferrer"
             target="_blank"
-            className="dark:hover:text-secondary dark:text-gray"
+            className="hover:text-secondary text-gray"
           >
             {icon}
           </motion.a>
