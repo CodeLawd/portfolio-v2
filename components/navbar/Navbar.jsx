@@ -26,8 +26,7 @@ const Navbar = () => {
     if (!mounted) return null;
 
     console.log(theme, systemTheme);
-    // const currentTheme = theme === "system" ? systemTheme : theme;
-    const currentTheme = "dark";
+    const currentTheme = theme === "light" ? theme : theme;
 
     if (currentTheme === "dark") {
       return (
