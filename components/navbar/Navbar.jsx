@@ -72,7 +72,7 @@ const Navbar = () => {
           </motion.a>
         ))}
 
-        {renderThemeChanger()}
+        {/* {renderThemeChanger()} */}
         <Button text="Resume" size="xs" />
       </div>
     </div>
