@@ -58,7 +58,7 @@ export const aboutInfo = [
   },
 ];
 
-export const tech = ["JavaScript (ES6+)", "React/Next", "Tailwind", "Node.js", "MongoDB"];
+export const tech = ["NextJS (React)", "React Native", "Tailwind", "Node.js (Express)", "MongoDB (Mongoose)"];
 
 export const companyName = [
   { name: "Radartrail", tab: "radartrail" },
@@ -189,19 +189,28 @@ export const otherProjects = [
       "The first iteration of my personal website. Built this while mastering React. This is a full stack portfolio built using my knowledge of React, Sass and Sanity.io (unified content platform that powers better digital experiences).",
     stack: ["React", "SCSS", "Sanity.io", "Framer Motion"],
   },
-  // {
-  //   url: "https://vercel.com",
-  //   github: "https://github.com",
-  //   title: "Lorem ipsum dolor sit dolor sit amet.",
-  //   description:
-  //     "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo harum consectetur porro. Placeat molestias expedita est fuga voluptatem eaque doloribus.",
-  //   stack: ["Next", "Tailwind", "mongoDB", "node"],
-  // },
-  // {
-  //   url: "https://vercel.com",
-  //   title: "Lorem ipsum dolor sit dolor sit amet.",
-  //   description:
-  //     "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo harum consectetur porro. Placeat molestias expedita est fuga voluptatem eaque doloribus.",
-  //   stack: ["Next", "Tailwind", "mongoDB", "node"],
-  // },
+  {
+    url: "https://codelawd.github.io/candycrush/",
+    github: "https://codelawd.github.io/candycrush/",
+    title: "Candy Crush Saga",
+    description:
+      "This is a simple candy crush game built with JavaScript. Built this project in 2020 while teaching some set of student about JavaScript in a coding bootcamp. I had a lot of fun building this from scratch.",
+    stack: ["HTML", "CSS", "JavaScript"],
+  },
+  {
+    url: "https://codelawd.github.io/easybank/",
+    github: "https://github.com/CodeLawd/easybank",
+    title: "Easybank Landing Page.",
+    description:
+      "This is the Easybank Langing Page challenge on frontendmentor. Built this way back 2019 when I was trying to master Bootstrap. I had a lot of fun building out this great project.",
+    stack: ["HTML", "CSS", "Bootstrap"],
+  },
+  {
+    url: "https://codelawd.github.io/tindog/",
+    github: "https://github.com/CodeLawd/tindog",
+    title: "Tindog Landing Page.",
+    description:
+      "This is a project I built back in 2019. I built this project while teaching some set of student responsive design with HTML, CSS and Bootstrap.",
+    stack: ["HTML", "CSS", "Bootstrap"],
+  },
 ];

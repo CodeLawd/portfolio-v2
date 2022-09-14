@@ -25,11 +25,11 @@ const AboutInfo = () => {
 
         <Tech />
       </div>
-      <div className="w-[80%] sm:w-[70%] h-[20rem] md:w-full  sticky top-24 group">
+      <div className="w-[80%] sm:w-[70%] h-[20rem] md:w-full mx-auto sticky top-24 group cursor-pointer">
         <img
           src="/me.jpg"
           alt=""
-          className="rounded-md grayscale group-hover:grayscale-0 w-full h-full object-cover object-top cursor-pointer sticky z-10"
+          className="rounded-md grayscale group-hover:grayscale-0 w-full h-full object-cover object-top sticky z-10"
         />
         <div className="border-2 border-secondary grayscale group-hover:grayscale-0  w-full h-full rounded-md absolute top-3 -right-3"></div>
       </div>
