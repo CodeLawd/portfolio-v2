@@ -11,10 +11,16 @@ const Experience = () => {
       id="experience"
     >
       <SectionTitle id="01" title="Where I've worked" />
-      <div className="mt-8 flex flex-col md:flex-row gap-8 overflow-hidden">
-        <div className="md:w-[30%] flex md:block overflow-hidden">
+
+      <div className="mt-8 flex flex-col md:flex-row gap-8">
+        <div className="w-full md:w-[35%] flex-col overflow-x-scroll">
           {companyName?.map(({ name, tab }, idx) => (
-            <div key={idx} className={`${activeTab === tab ? "md:border-0 " : "border-b-[2.5px] md:border-b-0 md:border-l md:border-gray-100"} mx-3`}>
+            <div
+              key={idx}
+              className={`${
+                activeTab === tab ? "md:border-0 " : "border-b-[2.5px] md:border-b-0 md:border-l md:border-gray-100"
+              } mx-3`}
+            >
               <p
                 className={`${
                   activeTab === tab &&

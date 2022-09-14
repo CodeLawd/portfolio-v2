@@ -4,7 +4,7 @@ import { BiRightArrow } from "react-icons/bi";
 
 const ActiveWork = ({ data }) => {
   return (
-    <div>
+    <div className="w-full flex-grow">
       {data?.map(({ company, position, period, location, tasks }, idx) => (
         <div className="max-w-2xl" key={idx}>
           <p className="text-lg font-semibold">

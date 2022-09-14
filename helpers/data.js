@@ -178,7 +178,8 @@ export const otherProjects = [
     url: "https://sme.radartrail.com/",
     github: "#",
     title: "Radartrail SME Platform",
-    description: "Second iteration of my personal website. Built with a NextJS and Tailwind.",
+    description:
+      "This is the SME platform for Radartrail. Clients/Customers can choose a plan that suites their business needs.",
     stack: ["NextJS", "Tailwind", "Framer Motion"],
   },
   {
