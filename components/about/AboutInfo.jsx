@@ -25,9 +25,13 @@ const AboutInfo = () => {
 
         <Tech />
       </div>
-      <div className="w-[80%] sm:w-[70%] h-72 md:w-full mx-auto bg-white sticky top-24">
-        <img src="/meditation.svg" alt="" className="rounded-md w-full h-full object-contain sticky z-10" />
-        <div className="border-2 border-secondary w-full h-full rounded-md absolute top-3 -right-3"></div>
+      <div className="w-[80%] sm:w-[70%] h-[20rem] md:w-full  sticky top-24 group">
+        <img
+          src="/me.jpg"
+          alt=""
+          className="rounded-md grayscale group-hover:grayscale-0 w-full h-full object-cover object-top cursor-pointer sticky z-10"
+        />
+        <div className="border-2 border-secondary grayscale group-hover:grayscale-0  w-full h-full rounded-md absolute top-3 -right-3"></div>
       </div>
     </div>
   );

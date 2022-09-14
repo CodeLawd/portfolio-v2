@@ -20,8 +20,8 @@ const Footer = () => {
           </motion.a>
         ))}
       </div>
-      <span className="font-sfmono text-gray text-sm hover:text-secondary cursor-pointer">
-        Design and Built by Joshua Alexander
+      <span className="font-sfmono text-gray text-xs hover:text-secondary cursor-pointer">
+        Built by Joshua Alexander ❤️
       </span>
     </div>
   );

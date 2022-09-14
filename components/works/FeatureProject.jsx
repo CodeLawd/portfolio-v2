@@ -23,7 +23,7 @@ const FeatureProject = () => {
           className={` ${!isOdd(idx) && "flex-row-reverse"} flex gap-5 my-10 relative items-center`}
           key={idx}
         >
-          <div className="hidden md:block w-[60%] h-full">
+          <div className="hidden md:block w-[60%] h-full hover:border-[0.7px] border-[#c9c9c9] hover:rounded-md">
             <Image
               src={image}
               layout="responsive"
@@ -42,7 +42,7 @@ const FeatureProject = () => {
             key={idx}
             // style={{ backgroundImage: url(`${image}`) }}
           >
-            <p className="font-sfmono text-xs text-secondary">Features Project</p>
+            <p className="font-sfmono text-xs text-secondary">Featured Project</p>
             <span className="text-gray font-bold text-2xl">{title}</span>
             <div
               className={`${

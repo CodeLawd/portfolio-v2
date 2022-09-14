@@ -155,30 +155,53 @@ export const featuredProjects = [
       },
     ],
   },
+  // {
+  //   title: "Personal Portfolio",
+  //   image: "/personal.png",
+  //   description: "Second iteration of my personal website. Built with a NextJS and Tailwind",
+  //   stack: ["NextJS", "Tailwind", "Framer motion"],
+  //   links: [
+  //     {
+  //       url: "https://github.com",
+  //       icon: <FiGithub className="w-5 h-5" />,
+  //     },
+  //     {
+  //       url: "https://codelawd.vercel.app",
+  //       icon: <FiExternalLink className="w-5 h-5" />,
+  //     },
+  //   ],
+  // },
 ];
 
 export const otherProjects = [
   {
-    url: "https://github.com",
-    github: "https://github.com",
-    title: "Lorem ipsum dolor sit dolor sit amet.",
-    description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo harum consectetur porro. Placeat molestias expedita est fuga voluptatem eaque doloribus.",
-    stack: ["Next", "Tailwind", "mongoDB", "node"],
+    url: "https://codelawd.vercel.app",
+    github: "https://github.com/CodeLawd/portfolio-v2",
+    title: "Personal Portfolio V2",
+    description: "Second iteration of my personal website. Built with a NextJS and Tailwind.",
+    stack: ["NextJS", "Tailwind", "Framer Motion"],
   },
   {
-    url: "https://vercel.com",
-    github: "https://github.com",
-    title: "Lorem ipsum dolor sit dolor sit amet.",
+    url: "https://codelawd-v1.vercel.app/",
+    github: "https://github.com/CodeLawd/personal-portfolio-reactjs-and-sanity",
+    title: "Personal Portfolio V1",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo harum consectetur porro. Placeat molestias expedita est fuga voluptatem eaque doloribus.",
-    stack: ["Next", "Tailwind", "mongoDB", "node"],
+      "The first iteration of my personal website. Built this while mastering React. This is a full stack portfolio built using my knowledge of React, Sass and Sanity.io (unified content platform that powers better digital experiences).",
+    stack: ["React", "SCSS", "Sanity.io", "Framer Motion"],
   },
-  {
-    url: "https://vercel.com",
-    title: "Lorem ipsum dolor sit dolor sit amet.",
-    description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo harum consectetur porro. Placeat molestias expedita est fuga voluptatem eaque doloribus.",
-    stack: ["Next", "Tailwind", "mongoDB", "node"],
-  },
+  // {
+  //   url: "https://vercel.com",
+  //   github: "https://github.com",
+  //   title: "Lorem ipsum dolor sit dolor sit amet.",
+  //   description:
+  //     "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo harum consectetur porro. Placeat molestias expedita est fuga voluptatem eaque doloribus.",
+  //   stack: ["Next", "Tailwind", "mongoDB", "node"],
+  // },
+  // {
+  //   url: "https://vercel.com",
+  //   title: "Lorem ipsum dolor sit dolor sit amet.",
+  //   description:
+  //     "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo harum consectetur porro. Placeat molestias expedita est fuga voluptatem eaque doloribus.",
+  //   stack: ["Next", "Tailwind", "mongoDB", "node"],
+  // },
 ];

@@ -39,6 +39,7 @@ const OtherProjects = () => {
                     </span>
                     <p className="text-sm text-gray leading-6">{description}</p>
                   </div>
+
                   <div className="flex gap-4 mt-8">
                     {stack?.map((stack, idx) => (
                       <span className="text-xs font-sfmono text-gray capitalize" key={idx}>
