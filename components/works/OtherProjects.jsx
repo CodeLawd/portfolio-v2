@@ -12,7 +12,14 @@ const OtherProjects = () => {
 
         <div className="grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {otherProjects?.map(({ url, github, title, description, stack }, idx) => (
-            <a href={url} target="_blank" rel="noreferrer" key={idx}>
+            <motion.a
+              whileInView={{ y: [50, 0] }}
+              transition={{ duration: 0.7, type: "tween" }}
+              href={url}
+              target="_blank"
+              rel="noreferrer"
+              key={idx}
+            >
               <motion.div
                 whileHover={{ y: [0, -8] }}
                 transition={{ duration: 0.2, type: "spring" }}
@@ -44,7 +51,7 @@ const OtherProjects = () => {
                   ))}
                 </div>
               </motion.div>
-            </a>
+            </motion.a>
           ))}
         </div>
       </div>

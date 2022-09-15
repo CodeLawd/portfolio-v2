@@ -6,19 +6,28 @@ import { socialIcon } from "../../helpers/data";
 
 const Header = () => {
   return (
-    <motion.div
-      // whileInView={{ scale: [200, 0] }}
-      // animate={{ scale: [200, 0] }}
-      // transition={{ duration: .3, ease: "easeIn", repeat: false }}
-      className="px-6 md:px-12 md:max-w-[80%] mx-auto flex items-center w-full h-[100vh] md:h-[85vh] relative"
-    >
+    <div className="px-6 md:px-12 md:max-w-[80%] mx-auto flex items-center w-full h-[100vh] md:h-[85vh] relative">
       <div className="max-w-6xl mx-auto -mt-20 sm:mt-0">
-        <span className="text-sm text-secondary font-sfmono py-2 px-4 rounded-md">Hi, my name is</span>
-        <h1 className="dark:text-gray text-primary font-mouse text-5xl md:text-7xl mt-4 font-black tracking-wider">
+        <span
+          // whileInView={{ x: [-50, 0] }}
+          // transition={{ duration: 1, type: "tween" }}
+          className="text-sm text-secondary font-sfmono py-2 px-4 rounded-md"
+        >
+          Hi, my name is
+        </span>
+        <h1
+          // whileInView={{ x: [-50, 0] }}
+          // transition={{ duration: 1, type: "tween" }}
+          className="dark:text-gray text-primary font-mouse text-5xl md:text-8xl mt-4 font-black tracking-wider"
+        >
           Joshua Alexander<span className="text-secondary animate-pulse">.</span>
         </h1>
-        <h1 className="text-[#8892B0] py-2 font-mouse text-4xl md:text-6xl font-extrabold tracking-wider">
-          I bring{" "}
+        <h1
+          // whileInView={{ x: [-50, 0] }}
+          // transition={{ duration: 1, type: "tween" }}
+          className="text-[#8892B0] py-2 font-mouse text-4xl md:text-7xl font-extrabold tracking-wider"
+        >
+          I bring
           <span className="text-secondary">
             ideas <GoLightBulb className="inline-flex w-8 animate-bounce" />{" "}
           </span>
@@ -45,7 +54,6 @@ const Header = () => {
           href="https://docs.google.com/document/d/1prnCNhc6ovyO1CO_mj-xgzfGDZvSIovRAaZFxyOTMfQ/edit?usp=sharing"
           className="border text-secondary border-secondary rounded-lg px-8 py-3 text-xs ml-2"
         >
-          {" "}
           Checkout my resume!
         </motion.a>
       </div>
@@ -81,7 +89,7 @@ const Header = () => {
         </motion.a>
         <div className="w-[1px] h-[80px] dark:bg-gray bg-primary" />
       </div>
-    </motion.div>
+    </div>
   );
 };
 

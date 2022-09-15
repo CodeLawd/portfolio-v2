@@ -18,7 +18,7 @@ const FeatureProject = () => {
 
       {featuredProjects?.map(({ title, description, stack, links, image, status }, idx) => (
         <motion.div
-          whileInView={{ y: [40, 0] }}
+          whileInView={{ y: [100, 0] }}
           transition={{ duration: 1, type: "tween" }}
           className={` ${!isOdd(idx) && "flex-row-reverse"} flex gap-5 my-10 relative items-center`}
           key={idx}

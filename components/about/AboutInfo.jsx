@@ -1,10 +1,15 @@
 import React from "react";
 import { aboutInfo } from "../../helpers/data";
 import Tech from "./Tech";
+import { motion } from "framer-motion";
 
 const AboutInfo = () => {
   return (
-    <div className="flex max-w-5xl mt-5 gap-10 flex-col md:flex-row relative">
+    <motion.div
+      whileInView={{ y: [100, 0] }}
+      transition={{ duration: 0.6, delay: 0.2 }}
+      className="flex max-w-5xl mt-5 gap-10 flex-col md:flex-row relative"
+    >
       <div className="text-[#8892B0]">
         <p className="text-sm md:text-base text-justify">
           I'm a software developer from Lagos, Nigeria. I am a passionate professional with various skills and
@@ -33,7 +38,7 @@ const AboutInfo = () => {
         />
         <div className="border-2 border-secondary grayscale group-hover:grayscale-0  w-full h-full rounded-md absolute top-3 -right-3"></div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

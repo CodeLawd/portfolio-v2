@@ -65,7 +65,11 @@ const Navbar = () => {
         <MenuAlt3Icon className="text-secondary h-8 w-8 cursor-pointer block md:hidden" />
       </div>
 
-      <div className="font-sfmono md:flex items-center hidden gap-5">
+      <motion.div
+        whileInView={{ y: [-30, 0] }}
+        transition={{ duration: 0.5, type: "tween" }}
+        className="font-sfmono md:flex items-center hidden gap-5"
+      >
         {navItem.map(({ title, id, destination }) => (
           <motion.a
             whileHover={{ y: [0, -2] }}
@@ -82,7 +86,7 @@ const Navbar = () => {
 
         {/* {renderThemeChanger()} */}
         <Button text="Resume" size="xs" />
-      </div>
+      </motion.div>
     </div>
   );
 };
