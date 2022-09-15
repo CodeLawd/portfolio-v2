@@ -19,7 +19,7 @@ const Contact = () => {
 
         <a
           href="mailto:alexander.joshua2018@gmail.com"
-          className="border rounded-md border-secondary text-sm py-4 px-8 mx-auto text-white text-center hover:bg-secondary hover:bg-opacity-10 mt-10 inline-block"
+          className="border rounded-md border-secondary text-sm py-4 px-8 mx-auto text-gray text-center hover:bg-secondary hover:bg-opacity-10 mt-10 inline-block"
         >
           Say Hello
         </a>

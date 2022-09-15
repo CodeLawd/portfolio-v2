@@ -81,7 +81,7 @@ const Article = () => {
           </motion.div>
         ))}
         <button
-          className="border rounded-md border-secondary text-sm py-3 px-6 mx-auto text-center hover:bg-secondary hover:bg-opacity-10"
+          className="border rounded-md border-secondary text-sm py-3 px-6 mx-auto text-center text-gray hover:bg-secondary hover:bg-opacity-10"
           onClick={() => (more >= articles.length ? setMore(more - 2) : setMore(more + 2))}
         >
           {more >= articles.length ? "Show Less" : "Show More"}

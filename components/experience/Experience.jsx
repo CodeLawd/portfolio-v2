@@ -17,13 +17,9 @@ const Experience = () => {
           {companyName?.map(({ name, tab }, idx) => (
             <div key={idx} className={`${activeTab === tab ? "md:border-0 " : "md:border-l md:border-gray-100"} mx-3`}>
               <p
-                // className={`${
-                //   activeTab === tab &&
-                //   "md:bg-secondary md:bg-opacity-10 text-secondary  md:border-l-[2.5px] border-secondary"
-                // }text-gray font-sfmono text-xs cursor-pointer p-4`}
-                className={`${
+                className={`text-gray ${
                   activeTab === tab && "bg-secondary bg-opacity-10 text-secondary  border-l-[2.5px] border-secondary"
-                }text-gray font-sfmono text-xs cursor-pointer p-4`}
+                } font-sfmono text-xs cursor-pointer p-4 text-gray`}
                 onClick={() => setActiveTab(tab)}
               >
                 {name}
