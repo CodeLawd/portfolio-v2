@@ -29,7 +29,7 @@ const Header = () => {
         >
           I bring
           <span className="text-secondary">
-            ideas <GoLightBulb className="inline-flex w-8 animate-bounce" />{" "}
+            &nbsp; ideas <GoLightBulb className="inline-flex w-8 animate-bounce" />{" "}
           </span>
           to reality<span className="text-secondary animate-pulse">.</span>
         </h1>
