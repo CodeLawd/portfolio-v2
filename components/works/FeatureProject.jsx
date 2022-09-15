@@ -52,11 +52,11 @@ const FeatureProject = () => {
             <div
               className={`${
                 !isOdd(idx) ? "" : "md:right-32"
-              } p-0 md:p-5 text-sm  md:bg-[#10243f] rounded-md shadow-md relative my-5 z-10 md:w-[130%]`}
+              } p-0 md:p-5 text-sm  md:bg-[#10243f] rounded-md md:shadow-md relative my-5 z-10 md:w-[130%]`}
             >
               <p className="text-gray">{description}</p>
               <p
-                className="text-secondary mt-5 uppercase
+                className="text-secondary mt-5 uppercase text-xs md:text-sm
               "
               >
                 <span className="font-bold">Status:</span> &nbsp;
