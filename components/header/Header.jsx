@@ -18,7 +18,7 @@ const Header = () => {
         <h1
           // whileInView={{ x: [-50, 0] }}
           // transition={{ duration: 1, type: "tween" }}
-          className="dark:text-gray text-primary font-mouse text-5xl md:text-8xl mt-4 font-black tracking-wider"
+          className="text-gray font-mouse text-5xl md:text-8xl mt-4 font-black tracking-wider"
         >
           Joshua Alexander<span className="text-secondary animate-pulse">.</span>
         </h1>
@@ -67,12 +67,12 @@ const Header = () => {
             rel="noreferrer"
             key={idx}
             target="_blank"
-            className="dark:hover:text-secondary dark:text-gray text-primary"
+            className="hover:text-secondary text-gray"
           >
             {icon}
           </motion.a>
         ))}
-        <div className="w-[1px] h-[80px] dark:bg-gray bg-primary" />
+        <div className="w-[1px] h-[80px] bg-gray" />
       </div>
 
       <div className="fixed bottom-0 right-16 hidden md:flex flex-col items-center gap-5">
@@ -82,12 +82,12 @@ const Header = () => {
           transition={{ duration: 0.2, type: "tween" }}
           rel="noreferrer"
           target="_blank"
-          className="dark:text-gray text-primary font-sfmono text-xstracking-wider text-xs dark:hover:text-secondary cursor-pointer"
+          className="text-gray font-sfmono tracking-wider text-xs hover:text-secondary cursor-pointer"
           style={{ textOrientation: "sideways", writingMode: "vertical-rl", letterSpacing: "2px" }}
         >
           alexander.joshua2018@gmail.com
         </motion.a>
-        <div className="w-[1px] h-[80px] dark:bg-gray bg-primary" />
+        <div className="w-[1px] h-[80px] bg-gray" />
       </div>
     </div>
   );

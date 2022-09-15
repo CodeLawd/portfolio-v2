@@ -7,7 +7,7 @@
 
 @layer base {
   body {
-    @apply dark:bg-black ;
+    /* @apply dark:bg-black ; */
     @apply min-h-screen;
   }
 
