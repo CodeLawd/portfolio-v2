@@ -10,7 +10,7 @@ const Contact = () => {
       <SectionTitle id="04" title="say hello" />
 
       <div className="mt-10 text-center mx-auto">
-        <h2 className="text-gray text-4xl font-bold">
+        <h2 className="text-gray text-2xl md:text-4xl font-bold">
           Take a coffee ☕ and let's talk <span className="text-secondary">.</span>
         </h2>
         <p className="max-w-xl my-8 text-gray leading-7 text-xl">
