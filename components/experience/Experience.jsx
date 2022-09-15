@@ -13,7 +13,7 @@ const Experience = () => {
       <SectionTitle id="01" title="Where I've worked" />
 
       <div className="mt-8 flex flex-col md:flex-row gap-8">
-        <div className="w-full md:w-[35%] flex-col overflow-x-scroll">
+        <div className="w-full md:w-[35%] flex-col">
           {companyName?.map(({ name, tab }, idx) => (
             <div key={idx} className={`${activeTab === tab ? "border-0" : "border-l border-gray-100"} mx-3`}>
               <p
