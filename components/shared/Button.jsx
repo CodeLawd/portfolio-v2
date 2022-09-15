@@ -5,7 +5,7 @@ const Button = ({ text, size, Icon }) => {
     <a
       target="_blank"
       href="https://docs.google.com/document/d/1prnCNhc6ovyO1CO_mj-xgzfGDZvSIovRAaZFxyOTMfQ/edit?usp=sharing"
-      className={`border hover:bg-[#5ff1cf33] dark:text-secondary text-primary border-primary dark:border-secondary rounded-md px-8 py-3 text-${size} ml-2`}
+      className={`border hover:bg-[#5ff1cf33] text-gray border-secondary rounded-md px-8 py-3 text-${size} ml-2`}
     >
       {text}
     </a>

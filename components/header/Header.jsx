@@ -45,17 +45,7 @@ const Header = () => {
           </span>
           .
         </p>
-
-        <motion.a
-          whileHover={{ scale: [1, 1.2] }}
-          transition={{ duration: 0.4, type: "tween" }}
-          target="_blank"
-          rel="noreferrer"
-          href="https://docs.google.com/document/d/1prnCNhc6ovyO1CO_mj-xgzfGDZvSIovRAaZFxyOTMfQ/edit?usp=sharing"
-          className="border text-secondary border-secondary rounded-lg px-8 py-3 text-xs ml-2"
-        >
-          Checkout my resume!
-        </motion.a>
+        <Button text="Check my resume" size="sm" />
       </div>
 
       <div className="fixed bottom-0 left-[5rem] hidden md:flex flex-col items-center gap-8">
