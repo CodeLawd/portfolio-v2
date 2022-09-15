@@ -15,7 +15,7 @@ const Experience = () => {
       <div className="mt-8 flex flex-col md:flex-row gap-8">
         <div className="w-full md:w-[35%] flex-col">
           {companyName?.map(({ name, tab }, idx) => (
-            <div key={idx} className={`${activeTab === tab ? "border-0" : "border-l border-gray-100"} mx-3`}>
+            <div key={idx} className={`${activeTab === tab ? "border-0" : "border-l border-gray"} mx-3`}>
               <p
                 className={`text-gray ${
                   activeTab === tab && "bg-secondary bg-opacity-10 text-secondary  border-l-[2.5px] border-secondary"
