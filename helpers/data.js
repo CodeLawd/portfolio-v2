@@ -124,6 +124,7 @@ export const featuredProjects = [
   {
     title: "Facile",
     image: "/facile.png",
+    status: "ongoing",
     description:
       "Facile is a tutorial based learning platform. With Facile every course content is a tutorial. At the end of each tutorial, you will have successfully built a project and understand how coding in the real world is.",
     stack: ["Next", "Tailwind", "mongoDB", "go", "node"],
@@ -141,6 +142,7 @@ export const featuredProjects = [
   {
     title: "Softrays",
     image: "/softrays.png",
+    status: "completed",
     description:
       "Softrays is a regional training center for Web development, Graphics design, AutoCAD (2D and 3D), CCNA & CCNP, Systems Engineering and Information Technology and Computing.",
     stack: ["Bootstrap", "EJS", "Node", "MongoDB"],

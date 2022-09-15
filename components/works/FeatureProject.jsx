@@ -16,14 +16,19 @@ const FeatureProject = () => {
     >
       <SectionTitle id="02" title="Some things I've built" />
 
-      {featuredProjects?.map(({ title, description, stack, links, image }, idx) => (
+      {featuredProjects?.map(({ title, description, stack, links, image, status }, idx) => (
         <motion.div
           whileInView={{ y: [40, 0] }}
           transition={{ duration: 1, type: "tween" }}
           className={` ${!isOdd(idx) && "flex-row-reverse"} flex gap-5 my-10 relative items-center`}
           key={idx}
         >
-          <div className="hidden md:block w-[60%] h-full hover:border-[0.7px] border-[#c9c9c9] hover:rounded-md">
+          <a
+            href={links[1].url}
+            target="_blank"
+            referrer="noreferrer"
+            className="hidden md:block w-[60%] h-full hover:border-[0.7px] border-[#c9c9c9] hover:rounded-md"
+          >
             <Image
               src={image}
               layout="responsive"
@@ -33,7 +38,7 @@ const FeatureProject = () => {
               blurDataURL="https://cdn.impression.co.uk/2021/03/loading1.gif"
               className="grayscale hover:grayscale-0 rounded-md cursor-pointer w-full object-cover"
             />
-          </div>
+          </a>
 
           <div
             className={`${
@@ -49,7 +54,14 @@ const FeatureProject = () => {
                 !isOdd(idx) ? "" : "md:right-32"
               } p-0 md:p-5 text-sm  md:bg-[#10243f] rounded-md shadow-md relative my-5 z-10 md:w-[130%]`}
             >
-              <span className="text-gray">{description}</span>
+              <p className="text-gray">{description}</p>
+              <p
+                className="text-secondary mt-5 uppercase
+              "
+              >
+                <span className="font-bold">Status:</span> &nbsp;
+                {status}
+              </p>
             </div>
             <div className={`${!isOdd(idx) ? "justify-start" : "md:justify-end"} flex gap-4`}>
               {stack?.map((stack, idx) => (
