@@ -43,7 +43,8 @@ const FeatureProject = () => {
           <div
             className={`${
               !isOdd(idx) ? "md:text-left" : "md:text-right"
-            } w-full md:w-[40%] h-full bg-[#10243f] md:bg-transparent p-8 rounded-md md:p-0`}
+            } w-full md:w-[40%] h-full bg-[#10243f] md:bg-transparent p-8 rounded-md md:p-0 bg-cover bg-no-repeat`}
+            // style={{ backgroundImage: `url(${image})`, opacity: 0.3 }}
             key={idx}
             // style={{ backgroundImage: url(`${image}`) }}
           >
@@ -70,7 +71,7 @@ const FeatureProject = () => {
                 </span>
               ))}
             </div>
-            <div className={`${!isOdd(idx) ? "justify-start" : "md:justify-end"} flex gap-5 mt-5 overflow-x-scroll`}>
+            <div className={`${!isOdd(idx) ? "justify-start" : "md:justify-end"} flex gap-5 mt-5`}>
               {links?.map(({ url, icon }, idx) => (
                 <a href={url} target="_blank" rel="noreferrer" key={idx} className="text-gray hover:text-secondary">
                   {icon}
