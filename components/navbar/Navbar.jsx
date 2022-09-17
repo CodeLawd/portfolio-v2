@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from "react";
-// import { useTheme } from "next-themes";
 import Button from "../shared/Button";
-import { MenuAlt3Icon, SunIcon, MoonIcon } from "@heroicons/react/solid";
-import { motion } from "framer-motion";
+import { MenuAlt3Icon } from "@heroicons/react/solid";
+import { AnimatePresence, motion } from "framer-motion";
 import { navItem } from "../../helpers/data";
 import Link from "next/link";
+import { MobileNavBar } from "..";
 
 const Navbar = () => {
   const [mounted, setMounted] = useState(false);
   const [scroll, setScroll] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     setMounted(true);
@@ -19,34 +20,6 @@ const Navbar = () => {
       window.addEventListener("scroll", () => setScroll(window.pageYOffset > 100));
     }
   }, []);
-
-  // const { systemTheme, theme, setTheme } = useTheme();
-
-  // const renderThemeChanger = () => {
-  //   if (!mounted) return null;
-
-  //   console.log(theme, systemTheme);
-  //   const currentTheme = theme === "light" ? setTheme : theme;
-
-  //   if (currentTheme === "dark") {
-  //     return (
-  //       // <input type="checkbox" className="toggle toggle-primary" checked onClick={() => setTheme("light")} />
-  //       <SunIcon
-  //         className="h-6 w-6 flex-shrink-0 text-primary dark:text-secondary"
-  //         role="button"
-  //         onClick={() => setTheme("light")}
-  //       />
-  //     );
-  //   } else {
-  //     return (
-  //       <MoonIcon
-  //         className="h-6 w-6 flex-shrink-0 text-primary dark:text-secondary"
-  //         role="button"
-  //         onClick={() => setTheme("dark")}
-  //       />
-  //     );
-  //   }
-  // };
 
   return (
     <div
@@ -62,7 +35,10 @@ const Navbar = () => {
 
       <div>
         {/* <MenuAlt3Icon /> */}
-        <MenuAlt3Icon className="text-secondary h-8 w-8 cursor-pointer block md:hidden" />
+        <MenuAlt3Icon
+          className="text-secondary h-8 w-8 cursor-pointer block md:hidden"
+          onClick={() => setMenuOpen(true)}
+        />
       </div>
 
       <motion.div
@@ -87,6 +63,29 @@ const Navbar = () => {
         {/* {renderThemeChanger()} */}
         <Button text="Resume" size="xs" />
       </motion.div>
+
+      {/* mobile menu start */}
+      {menuOpen && (
+        <div
+          className={`${
+            menuOpen && "backdrop-filter"
+          } fixed left-0 right-0 bottom-0 h-screen w-full lg:hidden bg-[#0000003d] z-[99999]`}
+          onClick={() => setMenuOpen(false)}
+        >
+          <AnimatePresence>
+            <motion.div
+              initial={{ x: 100 }}
+              animate={{ x: 0 }}
+              exit={{ x: 100, opacity: 0 }}
+              className="fixed top-0 right-0 bg-primary h-screen w-screen"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <MobileNavBar setMenuOpen={setMenuOpen} />
+            </motion.div>
+          </AnimatePresence>
+        </div>
+      )}
+      {/* mobile menu end */}
     </div>
   );
 };

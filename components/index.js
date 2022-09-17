@@ -1,5 +1,6 @@
 // NAVBAR
 export { default as Navbar } from "./navbar/Navbar";
+export { default as MobileNavBar } from "./navbar/MobileNavBar";
 
 // HEADER
 export { default as Header } from "./header/Header";
