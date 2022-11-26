@@ -177,6 +177,14 @@ export const featuredProjects = [
 
 export const otherProjects = [
   {
+    url: "http://josh-airbnb.vercel.app/",
+    github: "#",
+    title: "Airbnb Landing page",
+    description:
+      "This is the landing page of the Airbnb Platform. I built this while taking a React assesement for a job I applied for.",
+    stack: ["NextJS", "Tailwind", "Framer Motion"],
+  },
+  {
     url: "https://sme.radartrail.com/",
     github: "#",
     title: "Radartrail SME Platform",
@@ -215,12 +223,12 @@ export const otherProjects = [
       "This is the Easybank Langing Page challenge on frontendmentor. Built this way back 2019 when I was trying to master Bootstrap. I had a lot of fun building out this great project.",
     stack: ["HTML", "CSS", "Bootstrap"],
   },
-  {
-    url: "https://codelawd.github.io/tindog/",
-    github: "https://github.com/CodeLawd/tindog",
-    title: "Tindog Landing Page.",
-    description:
-      "This is a project I built back in 2019. I built this project while teaching some set of student responsive design with HTML, CSS and Bootstrap.",
-    stack: ["HTML", "CSS", "Bootstrap"],
-  },
+  // {
+  //   url: "https://codelawd.github.io/tindog/",
+  //   github: "https://github.com/CodeLawd/tindog",
+  //   title: "Tindog Landing Page.",
+  //   description:
+  //     "This is a project I built back in 2019. I built this project while teaching some set of student responsive design with HTML, CSS and Bootstrap.",
+  //   stack: ["HTML", "CSS", "Bootstrap"],
+  // },
 ];
