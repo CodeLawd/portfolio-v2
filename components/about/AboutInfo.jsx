@@ -2,6 +2,7 @@ import React from "react";
 import { aboutInfo } from "../../helpers/data";
 import Tech from "./Tech";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const AboutInfo = () => {
   return (
@@ -32,12 +33,15 @@ const AboutInfo = () => {
         <Tech />
       </div>
       <div className="w-full md:w-full mx-auto sticky top-24 group cursor-pointer">
-        <img
+        <Image
           src="/joshua.jpg"
           alt="joshua alexander"
+          layout="fill"
+          placeholder="blur"
+          blurDataURL="https://cdn.impression.co.uk/2021/03/loading1.gif"
           className="rounded-md grayscale group-hover:grayscale-0 w-full h-[90%] object-cover object-top sticky z-10"
         />
-        <div className="border-2 border-secondary grayscale transition-all duration-150 group-hover:grayscale-0 group-hover:top-3 group-hover:-right-3  w-full h-[90%] rounded-md absolute top-4 -right-4"></div>
+        <div className="border-2 border-secondary grayscale transition-all duration-150 group-hover:grayscale-0 group-hover:top-3 group-hover:-right-3  w-full h-full rounded-md absolute top-4 -right-4"></div>
       </div>
     </motion.div>
   );
