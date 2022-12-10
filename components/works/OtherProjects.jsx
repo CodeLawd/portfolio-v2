@@ -13,6 +13,7 @@ const OtherProjects = () => {
         <div className="grid grid-col-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {otherProjects?.map(({ url, github, title, description, stack }, idx) => (
             <motion.a
+              viewport={{ once: true }}
               whileInView={{ y: [50, 0] }}
               transition={{ duration: 0.7, type: "tween" }}
               href={url}

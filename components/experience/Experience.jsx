@@ -19,7 +19,7 @@ const Experience = () => {
               <p
                 className={`text-gray ${
                   activeTab === tab && "bg-secondary bg-opacity-10 text-secondary  border-l-[2.5px] border-secondary"
-                } font-sfmono text-xs cursor-pointer p-4 text-gray`}
+                } font-sfmono text-xs cursor-pointer p-4 text-gray hover:bg-secondary hover:bg-opacity-5`}
                 onClick={() => setActiveTab(tab)}
               >
                 {name}

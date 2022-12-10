@@ -8,6 +8,7 @@ const SectionTitle = ({ title, id }) => {
     <motion.div
       whileInView={{ x: [-50, 0] }}
       transition={{ duration: 0.6 }}
+      viewport={{ once: true }}
       className="flex items-center justify-start gap-5"
     >
       <span className="text-xl font-semibold text-gray capitalize">

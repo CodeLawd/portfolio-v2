@@ -6,11 +6,12 @@ import { motion } from "framer-motion";
 const AboutInfo = () => {
   return (
     <motion.div
+      viewport={{ once: true }}
       whileInView={{ y: [100, 0] }}
       transition={{ duration: 0.6, delay: 0.2 }}
-      className="flex max-w-5xl mt-5 gap-10 flex-col md:flex-row relative"
+      className="flex mt-5 gap-10 flex-col md:flex-row relative"
     >
-      <div className="text-[#8892B0]">
+      <div className="text-[#8892B0] w-full">
         <p className="text-sm md:text-base text-justify">
           I'm a software developer from Lagos, Nigeria. I am a passionate professional with various skills and
           experience spanning across Full Stack Development, UI/UX Design, Mobile Development and Technical Writing. I
@@ -30,13 +31,13 @@ const AboutInfo = () => {
 
         <Tech />
       </div>
-      <div className="w-[80%] sm:w-[70%] h-[20rem] md:w-full mx-auto sticky top-24 group cursor-pointer">
+      <div className="w-full md:w-full mx-auto sticky top-24 group cursor-pointer">
         <img
-          src="/me.jpg"
-          alt=""
-          className="rounded-md grayscale group-hover:grayscale-0 w-full h-full object-cover object-top sticky z-10"
+          src="/joshua.jpg"
+          alt="joshua alexander"
+          className="rounded-md grayscale group-hover:grayscale-0 w-full h-[90%] object-cover object-top sticky z-10"
         />
-        <div className="border-2 border-secondary grayscale group-hover:grayscale-0  w-full h-full rounded-md absolute top-3 -right-3"></div>
+        <div className="border-2 border-secondary grayscale transition-all duration-150 group-hover:grayscale-0 group-hover:top-3 group-hover:-right-3  w-full h-[90%] rounded-md absolute top-4 -right-4"></div>
       </div>
     </motion.div>
   );
