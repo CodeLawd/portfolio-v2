@@ -7,7 +7,7 @@ const Experience = () => {
 
   return (
     <div
-      className="px-6 md:px-12 pb-10 md:max-w-[60%] mx-auto pt-28 h-[70vh] flex flex-col items-start justify-center w-full"
+      className="px-6 md:px-12 pb-10 md:max-w-[70%] mx-auto pt-28 h-[70vh] flex flex-col items-start justify-center w-full my-40 md:my-0"
       id="experience"
     >
       <SectionTitle id="01" title="Where I've worked" />

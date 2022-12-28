@@ -58,7 +58,7 @@ export const aboutInfo = [
   },
 ];
 
-export const tech = ["NextJS (React)", "React Native", "Tailwind", "Node.js (Express)", "MongoDB (Mongoose)"];
+export const tech = ["NextJS (React)", "React Native", "Tailwind", "Node.js (Express, Nest)", "MongoDB (Mongoose)"];
 
 export const companyName = [
   { name: "Radartrail", tab: "radartrail" },
@@ -74,9 +74,10 @@ export const softrays = [
     period: "December 2018 - May 2022",
     location: "Ilorin, Nigeria",
     tasks: [
-      "I orchestrated and developed the company's web application using the MVC pattern powered by Bootstrap, EJS and Node.",
-      "I worked on a couple of projects both individually and in teams for the organizations’ clients using Javascript technologies.",
-      "I was responsible for creating wireframes, mockups and prototypes for products and seeing them to deployment.",
+      "Developed and maintained the company's web application using the MVC pattern, utilizing technologies such as Bootstrap, EJS, and Node.",
+      "Worked on various projects individually and as part of a team, using Javascript technologies to deliver high-quality solutions for clients.",
+      "Created wireframes, mockups, and prototypes for products and oversaw their deployment, ensuring that projects were delivered on time and to high standards.",
+      "Trained over 100 students in core programming concepts, web accessibility, and scalable web application development, emphasizing the importance of building reusable components and designing user-friendly interfaces.",
     ],
   },
 ];
@@ -88,8 +89,12 @@ export const talkamnaija = [
     period: "October 2021 - Present",
     location: "Tallin, Estonia",
     tasks: [
-      "Responsible for developing the frontend architecture of the TalkAmNaija app using Vue JS and Tailwind CSS.",
-      "Manually tested sites in various browsers and mobile devices to ensure cross-browser compatibility and responsiveness",
+      "Developing the frontend architecture of the TalkAmNaija platform using Vue JS and Tailwind CSS.",
+      "Collaborating with the team to design and implement features that support the platform's goal of enabling citizen engagement with authorities.",
+      "Ensuring that the platform is user-friendly and accessible to users of all levels of technical proficiency.",
+      "Participating in code reviews and other team-wide processes to ensure that the platform is of high quality and meets the needs of its users.",
+      "Contribute to the ongoing development and evolution of the platform, working to improve its functionality and user experience.",
+      "Help to support the overall mission of the platform by enabling citizens to more effectively engage with authorities and report societal issues.",
     ],
   },
 ];
@@ -101,8 +106,11 @@ export const brooks = [
     period: "May 2022 - August 2022",
     location: "Lagos, Nigeria",
     tasks: [
-      "Lead the team that worked on Flo Project (one of the company’s clients) using the latest web technologies to deliver fast and great product",
-      "Collaborated with other team members on various of different large-scale projects that meets the client objectives",
+      "Led the frontend development team, providing guidance and support to junior team members as needed.",
+      "Designed and implemented the frontend architecture of web applications, using technologies such as React (NextJS), TailwindCSS, Redux.",
+      "Collaborated with the design and back-end development teams to ensure that web applications were visually appealing, user-friendly, and efficient.",
+      "Participated in code reviews and provided feedback to improve the quality and efficiency of the codebase. ",
+      "Stayed up-to-date with the latest developments in frontend development and applied this knowledge to your work to ensure that the company's web applications were cutting-edge and competitive.",
     ],
   },
 ];
@@ -114,8 +122,12 @@ export const radartrail = [
     period: "August 2022 - Present",
     location: "Lagos, Nigeria",
     tasks: [
-      "Lead the team that worked Pulse app - which is an employee progress tracking & appraisal software used internally by the company",
-      "Write modern, performant, maintainable code for a diverse array of client and internal projects",
+      "Led the development of the Pulse App, a SASS employee engagement and performance management platform.",
+      "Develop RESTful APIs for web and mobile applications, ensuring that they are efficient, scalable, and maintainable.",
+      "Work with clients to understand their needs and requirements, and translate those into technical solutions",
+      "Work closely with project managers and other stakeholders to ensure that projects are delivered on time and to high standards.",
+      "Collaborate with team members to design and implement solutions that meet the needs of clients",
+      "Conducted code reviews and made updates to improve efficiency and maintain high quality standards.",
     ],
   },
 ];

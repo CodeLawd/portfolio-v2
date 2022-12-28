@@ -10,7 +10,7 @@ const Tech = () => {
         {tech?.map((tech, idx) => (
           <div className="flex items-center gap-2" key={idx}>
             <BiRightArrow className="w-3 h-3 text-secondary" />
-            <span className="text-xs md:text-sm text-gray font-sfmono">{tech}</span>
+            <span className="text-xs md:text-sm text-gray font-sfmono w-full">{tech}</span>
           </div>
         ))}
       </div>
