@@ -39,12 +39,12 @@ const AboutInfo = () => {
           layout="fill"
           placeholder="blur"
           blurDataURL="https://cdn.impression.co.uk/2021/03/loading1.gif"
-          className="hidden rounded-md grayscale group-hover:grayscale-0 w-full h-[90%] object-cover object-top sticky z-10"
+          className="hidden rounded-md grayscale group-hover:grayscale-0  w-full h-[90%] object-cover object-top sticky z-10"
         />
         <img
           src="/joshua.jpg"
           alt="joshua alexander"
-          className="block md:hidden rounded-md grayscale group-hover:grayscale-0 w-full h-[90%] object-cover object-top sticky z-10"
+          className="block md:hidden rounded-md grayscale group-hover:grayscale-0 w-full h-[90%] object-cover object-top sticky z-10 group-hover:scale-110 transition-all duration-500"
         />
         <div className="border-2 border-secondary grayscale transition-all duration-150 group-hover:grayscale-0 group-hover:top-3 group-hover:-right-3  w-full h-full rounded-md absolute top-4 -right-4"></div>
       </div>
