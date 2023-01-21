@@ -33,7 +33,7 @@ const Header = () => {
           </span>
           to reality<span className="text-secondary animate-pulse">.</span>
         </h1>
-        <p className="text-[#8892B0] py-3 lg:w-[65%] mt-5 mb-6 leading-8 md:leading-6 text-base">
+        {/* <p className="text-[#8892B0] py-3 lg:w-[65%] mt-5 mb-6 leading-8 md:leading-6 text-base">
           I'm a <span className="text-secondary">Software developer</span> who specializes in JavaScript Technologies
           (Node.js, Express, React/Next and MongoDB) to{" "}
           <span className="text-secondary"> solve business problems. </span> Currently, I’m focused on building
@@ -44,6 +44,13 @@ const Header = () => {
             </a>
           </span>
           .
+        </p> */}
+        <p className="text-[#8892B0] py-3 lg:w-[75%] mt-5 mb-6 leading-8 md:leading-6 text-base">
+          I'm a <span className="text-secondary">Software Engineer</span> with expertise in developing and deploying web
+          applications using technologies such as React, Node.js, and MongoDB.{" "}
+          <span className="text-secondary">Strong ability</span> to design, build and maintain RESTful APIs and deliver
+          efficient, scalable and maintainable solutions. <span className="text-secondary">Proven</span> track record of
+          leading cross-functional teams and delivering projects on time and to high standards.
         </p>
         <Button text="Check my resume" size="sm" />
       </div>

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { companyName, softrays, talkamnaija, brooks, radartrail } from "../../helpers/data";
+import { companyName, softrays, talkamnaija, brooks, radartrail, landa } from "../../helpers/data";
 import { ActiveWork, SectionTitle } from "..";
 
 const Experience = () => {
@@ -28,6 +28,7 @@ const Experience = () => {
           ))}
         </div>
 
+        {activeTab === "landa" && <ActiveWork data={landa} />}
         {activeTab === "radartrail" && <ActiveWork data={radartrail} />}
         {activeTab === "brooks" && <ActiveWork data={brooks} />}
         {activeTab === "talkamnaija" && <ActiveWork data={talkamnaija} />}

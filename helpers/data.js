@@ -61,10 +61,29 @@ export const aboutInfo = [
 export const tech = ["NextJS (React)", "React Native", "Tailwind", "Node.js (Express, Nest)", "MongoDB (Mongoose)"];
 
 export const companyName = [
+  { name: "Landa", tab: "landa" },
   { name: "Radartrail", tab: "radartrail" },
   { name: "Brooks and Blake", tab: "brooks" },
   { name: "TalkAmNaija", tab: "talkamnaija" },
   { name: "Softrays", tab: "softrays" },
+];
+
+export const landa = [
+  {
+    company: "@ Landa",
+    position: "Backend Engineer",
+    period: "January 2023 - Present",
+    location: "Contract",
+    tasks: [
+      "Developed and maintained the backend system using NestJS backend framework.",
+      "Implemented various features and functionalities to improve platform performance and user experience.",
+      "Utilized MongoDB for data storage and management, including creating and optimizing database schemas.",
+      "Implemented documentation for API endpoints utilizing the OpenAPI Specification (OAS) 3.0 and Swagger tool.",
+      "Implemented CI/CD pipeline using Serverless, AWS and Git.",
+      "Collaborated with the front-end development team to ensure seamless integration of the backend with the front-end.",
+      "Followed best practices for security and scalability in the backend development process.",
+    ],
+  },
 ];
 
 export const softrays = [
