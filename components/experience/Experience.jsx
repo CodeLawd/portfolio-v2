@@ -3,7 +3,7 @@ import { companyName, softrays, talkamnaija, brooks, radartrail, landa } from ".
 import { ActiveWork, SectionTitle } from "..";
 
 const Experience = () => {
-  const [activeTab, setActiveTab] = useState("radartrail");
+  const [activeTab, setActiveTab] = useState("landa");
 
   return (
     <div
