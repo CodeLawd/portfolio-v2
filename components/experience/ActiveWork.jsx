@@ -16,7 +16,7 @@ const ActiveWork = ({ data }) => {
           {tasks?.map((task, idx) => (
             <div className="flex mt-2 gap-4 items-start mb-2" key={idx}>
               <BiRightArrow className="w-3 h-3 text-secondary mt-2" />
-              <span className="text-gray leading-6 w-full text-justify">{task}</span>
+              <span className="text-gray leading-6 w-full md:text-justify">{task}</span>
             </div>
           ))}
         </div>

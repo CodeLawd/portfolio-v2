@@ -170,6 +170,7 @@ export const featuredProjects = [
       },
     ],
   },
+
   {
     title: "Softrays",
     image: "/softrays.png",
@@ -208,6 +209,14 @@ export const featuredProjects = [
 
 export const otherProjects = [
   {
+    url: "http://bold-nu.vercel.app/",
+    github: "#",
+    title: "Boldo Landing page",
+    description:
+      "Funding handshake buyer business-to-business metrics iPad partnership. First mover advantage innovator success deployment non-disclosure.",
+    stack: ["NextJS", "Tailwind", "Framer Motion"],
+  },
+  {
     url: "http://josh-airbnb.vercel.app/",
     github: "#",
     title: "Airbnb Landing page",
@@ -238,22 +247,22 @@ export const otherProjects = [
       "The first iteration of my personal website. Built this while mastering React. This is a full stack portfolio built using my knowledge of React, Sass and Sanity.io (unified content platform that powers better digital experiences).",
     stack: ["React", "SCSS", "Sanity.io", "Framer Motion"],
   },
-  {
-    url: "https://codelawd.github.io/candycrush/",
-    github: "https://codelawd.github.io/candycrush/",
-    title: "Candy Crush Saga",
-    description:
-      "This is a simple candy crush game built with JavaScript. Built this project in 2020 while teaching some set of student about JavaScript in a coding bootcamp. I had a lot of fun building this from scratch.",
-    stack: ["HTML", "CSS", "JavaScript"],
-  },
-  {
-    url: "https://codelawd.github.io/easybank/",
-    github: "https://github.com/CodeLawd/easybank",
-    title: "Easybank Landing Page.",
-    description:
-      "This is the Easybank Langing Page challenge on frontendmentor. Built this way back 2019 when I was trying to master Bootstrap. I had a lot of fun building out this great project.",
-    stack: ["HTML", "CSS", "Bootstrap"],
-  },
+  // {
+  //   url: "https://codelawd.github.io/candycrush/",
+  //   github: "https://codelawd.github.io/candycrush/",
+  //   title: "Candy Crush Saga",
+  //   description:
+  //     "This is a simple candy crush game built with JavaScript. Built this project in 2020 while teaching some set of student about JavaScript in a coding bootcamp. I had a lot of fun building this from scratch.",
+  //   stack: ["HTML", "CSS", "JavaScript"],
+  // },
+  // {
+  //   url: "https://codelawd.github.io/easybank/",
+  //   github: "https://github.com/CodeLawd/easybank",
+  //   title: "Easybank Landing Page.",
+  //   description:
+  //     "This is the Easybank Langing Page challenge on frontendmentor. Built this way back 2019 when I was trying to master Bootstrap. I had a lot of fun building out this great project.",
+  //   stack: ["HTML", "CSS", "Bootstrap"],
+  // },
   // {
   //   url: "https://codelawd.github.io/tindog/",
   //   github: "https://github.com/CodeLawd/tindog",
