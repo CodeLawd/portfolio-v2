@@ -1,4 +1,10 @@
-import { FiGithub, FiTwitter, FiLinkedin, FiGlobe, FiExternalLink } from "react-icons/fi";
+import {
+  FiGithub,
+  FiTwitter,
+  FiLinkedin,
+  FiGlobe,
+  FiExternalLink,
+} from "react-icons/fi";
 
 export const navItem = [
   {
@@ -58,9 +64,16 @@ export const aboutInfo = [
   },
 ];
 
-export const tech = ["NextJS (React)", "React Native", "Tailwind", "Node.js (Express, Nest)", "MongoDB (Mongoose)"];
+export const tech = [
+  "NextJS (React)",
+  "React Native",
+  "Tailwind",
+  "Node.js (Express, Nest)",
+  "MongoDB (Mongoose)",
+];
 
 export const companyName = [
+  { name: "Nophin", tab: "nophin" },
   { name: "Landa", tab: "landa" },
   { name: "Radartrail", tab: "radartrail" },
   { name: "Brooks and Blake", tab: "brooks" },
@@ -68,88 +81,94 @@ export const companyName = [
   { name: "Softrays", tab: "softrays" },
 ];
 
-export const landa = [
-  {
-    company: "@ Landa",
-    position: "Backend Engineer",
-    period: "January 2023 - Present",
-    location: "Contract",
-    tasks: [
-      "Developed and maintained the backend system using NestJS backend framework.",
-      "Implemented various features and functionalities to improve platform performance and user experience.",
-      "Utilized MongoDB for data storage and management, including creating and optimizing database schemas.",
-      "Implemented documentation for API endpoints utilizing the OpenAPI Specification (OAS) 3.0 and Swagger tool.",
-      "Implemented CI/CD pipeline using Serverless, AWS and Git.",
-      "Collaborated with the front-end development team to ensure seamless integration of the backend with the front-end.",
-      "Followed best practices for security and scalability in the backend development process.",
-    ],
-  },
-];
+export const nophin = {
+  company: "@ Nophin",
+  position: "Software Engineer",
+  period: "May 2023 - Present",
+  location: "NY, USA | Remote",
+  tasks: [
+    "Frontend Lead: Defined the frontend architecture and technology stack to ensure efficiency and scalability.",
+    "Established coding standards and best practices for consistent and maintainable code.",
+    "Cultivated a collaborative and innovative team environment to deliver high-quality frontend experiences.",
+    "Architect, design, and implement scalable and efficient backend systems and APIs to support the company's AI-driven commercial real estate underwriting platform",
+    "Implemented CI/CD pipeline using Serverless, AWS and Git.",
+    "Develop and maintain robust, reliable, and secure backend services using technologies such as TypeScript and Nest.js.",
+    "Followed best practices for security and scalability in the backend development process.",
+  ],
+};
 
-export const softrays = [
-  {
-    company: "@ Softrays",
-    position: "Software Developer",
-    period: "December 2018 - May 2022",
-    location: "Ilorin, Nigeria",
-    tasks: [
-      "Developed and maintained the company's web application using the MVC pattern, utilizing technologies such as Bootstrap, EJS, and Node.",
-      "Worked on various projects individually and as part of a team, using Javascript technologies to deliver high-quality solutions for clients.",
-      "Created wireframes, mockups, and prototypes for products and oversaw their deployment, ensuring that projects were delivered on time and to high standards.",
-      "Trained over 100 students in core programming concepts, web accessibility, and scalable web application development, emphasizing the importance of building reusable components and designing user-friendly interfaces.",
-    ],
-  },
-];
+export const landa = {
+  company: "@ Landa",
+  position: "Backend Engineer",
+  period: "January 2023 - August 2023",
+  location: "Contract",
+  tasks: [
+    "Developed and maintained the backend system using NestJS backend framework.",
+    "Implemented various features and functionalities to improve platform performance and user experience.",
+    "Utilized MongoDB for data storage and management, including creating and optimizing database schemas.",
+    "Implemented documentation for API endpoints utilizing the OpenAPI Specification (OAS) 3.0 and Swagger tool.",
+    "Implemented CI/CD pipeline using Serverless, AWS and Git.",
+    "Collaborated with the front-end development team to ensure seamless integration of the backend with the front-end.",
+    "Followed best practices for security and scalability in the backend development process.",
+  ],
+};
 
-export const talkamnaija = [
-  {
-    company: "@ TalkAmNaija",
-    position: "Frontend Develoer",
-    period: "October 2021 - Present",
-    location: "Tallin, Estonia",
-    tasks: [
-      "Developing the frontend architecture of the TalkAmNaija platform using Vue JS and Tailwind CSS.",
-      "Collaborating with the team to design and implement features that support the platform's goal of enabling citizen engagement with authorities.",
-      "Ensuring that the platform is user-friendly and accessible to users of all levels of technical proficiency.",
-      "Participating in code reviews and other team-wide processes to ensure that the platform is of high quality and meets the needs of its users.",
-      "Contribute to the ongoing development and evolution of the platform, working to improve its functionality and user experience.",
-      "Help to support the overall mission of the platform by enabling citizens to more effectively engage with authorities and report societal issues.",
-    ],
-  },
-];
+export const softrays = {
+  company: "@ Softrays",
+  position: "Software Developer",
+  period: "December 2018 - May 2022",
+  location: "Ilorin, Nigeria",
+  tasks: [
+    "Developed and maintained the company's web application using the MVC pattern, utilizing technologies such as Bootstrap, EJS, and Node.",
+    "Worked on various projects individually and as part of a team, using Javascript technologies to deliver high-quality solutions for clients.",
+    "Created wireframes, mockups, and prototypes for products and oversaw their deployment, ensuring that projects were delivered on time and to high standards.",
+    "Trained over 100 students in core programming concepts, web accessibility, and scalable web application development, emphasizing the importance of building reusable components and designing user-friendly interfaces.",
+  ],
+};
 
-export const brooks = [
-  {
-    company: "@ Brooks and Blake",
-    position: "Senior Frontend Develoer",
-    period: "May 2022 - August 2022",
-    location: "Lagos, Nigeria",
-    tasks: [
-      "Led the frontend development team, providing guidance and support to junior team members as needed.",
-      "Designed and implemented the frontend architecture of web applications, using technologies such as React (NextJS), TailwindCSS, Redux.",
-      "Collaborated with the design and back-end development teams to ensure that web applications were visually appealing, user-friendly, and efficient.",
-      "Participated in code reviews and provided feedback to improve the quality and efficiency of the codebase. ",
-      "Stayed up-to-date with the latest developments in frontend development and applied this knowledge to your work to ensure that the company's web applications were cutting-edge and competitive.",
-    ],
-  },
-];
+export const talkamnaija = {
+  company: "@ TalkAmNaija",
+  position: "Frontend Develoer",
+  period: "October 2021 - Present",
+  location: "Tallin, Estonia",
+  tasks: [
+    "Developing the frontend architecture of the TalkAmNaija platform using Vue JS and Tailwind CSS.",
+    "Collaborating with the team to design and implement features that support the platform's goal of enabling citizen engagement with authorities.",
+    "Ensuring that the platform is user-friendly and accessible to users of all levels of technical proficiency.",
+    "Participating in code reviews and other team-wide processes to ensure that the platform is of high quality and meets the needs of its users.",
+    "Contribute to the ongoing development and evolution of the platform, working to improve its functionality and user experience.",
+    "Help to support the overall mission of the platform by enabling citizens to more effectively engage with authorities and report societal issues.",
+  ],
+};
 
-export const radartrail = [
-  {
-    company: "@ Radartrail",
-    position: "Software Enginner",
-    period: "August 2022 - Present",
-    location: "Lagos, Nigeria",
-    tasks: [
-      "Led the development of the Pulse App, a SASS employee engagement and performance management platform.",
-      "Develop RESTful APIs for web and mobile applications, ensuring that they are efficient, scalable, and maintainable.",
-      "Work with clients to understand their needs and requirements, and translate those into technical solutions",
-      "Work closely with project managers and other stakeholders to ensure that projects are delivered on time and to high standards.",
-      "Collaborate with team members to design and implement solutions that meet the needs of clients",
-      "Conducted code reviews and made updates to improve efficiency and maintain high quality standards.",
-    ],
-  },
-];
+export const brooks = {
+  company: "@ Brooks and Blake",
+  position: "Senior Frontend Develoer",
+  period: "May 2022 - August 2022",
+  location: "Lagos, Nigeria",
+  tasks: [
+    "Led the frontend development team, providing guidance and support to junior team members as needed.",
+    "Designed and implemented the frontend architecture of web applications, using technologies such as React (NextJS), TailwindCSS, Redux.",
+    "Collaborated with the design and back-end development teams to ensure that web applications were visually appealing, user-friendly, and efficient.",
+    "Participated in code reviews and provided feedback to improve the quality and efficiency of the codebase. ",
+    "Stayed up-to-date with the latest developments in frontend development and applied this knowledge to your work to ensure that the company's web applications were cutting-edge and competitive.",
+  ],
+};
+
+export const radartrail = {
+  company: "@ Radartrail",
+  position: "Software Enginner",
+  period: "August 2022 - Present",
+  location: "Lagos, Nigeria",
+  tasks: [
+    "Led the development of the Pulse App, a SASS employee engagement and performance management platform.",
+    "Develop RESTful APIs for web and mobile applications, ensuring that they are efficient, scalable, and maintainable.",
+    "Work with clients to understand their needs and requirements, and translate those into technical solutions",
+    "Work closely with project managers and other stakeholders to ensure that projects are delivered on time and to high standards.",
+    "Collaborate with team members to design and implement solutions that meet the needs of clients",
+    "Conducted code reviews and made updates to improve efficiency and maintain high quality standards.",
+  ],
+};
 
 export const featuredProjects = [
   {
@@ -236,7 +255,8 @@ export const otherProjects = [
     url: "https://codelawd.vercel.app",
     github: "https://github.com/CodeLawd/portfolio-v2",
     title: "Personal Portfolio V2",
-    description: "Second iteration of my personal website. Built with a NextJS and Tailwind.",
+    description:
+      "Second iteration of my personal website. Built with a NextJS and Tailwind.",
     stack: ["NextJS", "Tailwind", "Framer Motion"],
   },
   {

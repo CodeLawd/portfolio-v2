@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import { socialIcon } from "../../helpers/data";
 import { motion } from "framer-motion";
@@ -20,7 +22,7 @@ const Footer = () => {
           </motion.a>
         ))}
       </div>
-      <span className="font-sfmono text-gray text-xs hover:text-secondary cursor-pointer">
+      <span className="text-xs cursor-pointer font-sfmono text-gray hover:text-secondary">
         Built by Joshua Alexander ❤️
       </span>
     </div>
