@@ -9,17 +9,19 @@ const Contact = () => {
     >
       <SectionTitle id="04" title="say hello" />
 
-      <div className="mt-10 text-center mx-auto">
-        <h2 className="text-gray text-3xl md:text-4xl font-bold">
-          Take a coffee ☕ and let's talk <span className="text-secondary">.</span>
+      <div className="mx-auto mt-10 text-center">
+        <h2 className="text-3xl font-bold text-gray md:text-4xl">
+          Take a coffee ☕ and let's talk{" "}
+          <span className="text-secondary">.</span>
         </h2>
-        <p className="max-w-xl my-8 text-gray leading-7 text-xl">
-          Got a question or proposal, or just want to say hello? <br /> <br /> Go ahead.
+        <p className="max-w-xl my-8 text-xl leading-7 text-gray">
+          Got a question or proposal, or just want to say hello? <br /> <br />{" "}
+          Go ahead.
         </p>
 
         <a
           href="mailto:alexander.joshua2018@gmail.com"
-          className="border rounded-md border-secondary text-sm py-4 px-8 mx-auto text-gray text-center hover:bg-secondary hover:bg-opacity-10 mt-10 inline-block"
+          className="inline-block px-8 py-4 mx-auto mt-10 text-sm text-center border rounded-md border-secondary text-gray hover:bg-secondary hover:bg-opacity-10"
         >
           Say Hello
         </a>

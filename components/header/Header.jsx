@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Button from "../shared/Button";
 import { GoLightBulb } from "react-icons/go";
@@ -11,16 +13,17 @@ const Header = () => {
         <span
           // whileInView={{ x: [-50, 0] }}
           // transition={{ duration: 1, type: "tween" }}
-          className="text-sm text-secondary font-sfmono py-2 px-4 rounded-md"
+          className="px-4 py-2 text-sm rounded-md text-secondary font-sfmono"
         >
           Hi, my name is
         </span>
         <h1
           // whileInView={{ x: [-50, 0] }}
           // transition={{ duration: 1, type: "tween" }}
-          className="text-gray font-mouse text-5xl md:text-8xl mt-4 font-black tracking-wider"
+          className="mt-4 text-5xl font-black tracking-wider text-gray font-mouse md:text-8xl"
         >
-          Joshua Alexander<span className="text-secondary animate-pulse">.</span>
+          Joshua Alexander
+          <span className="text-secondary animate-pulse">.</span>
         </h1>
         <h1
           // whileInView={{ x: [-50, 0] }}
@@ -29,7 +32,8 @@ const Header = () => {
         >
           I bring
           <span className="text-secondary">
-            &nbsp; ideas <GoLightBulb className="inline-flex w-8 animate-bounce" />{" "}
+            &nbsp; ideas{" "}
+            <GoLightBulb className="inline-flex w-8 animate-bounce" />{" "}
           </span>
           to reality<span className="text-secondary animate-pulse">.</span>
         </h1>
@@ -46,11 +50,14 @@ const Header = () => {
           .
         </p> */}
         <p className="text-[#8892B0] py-3 lg:w-[75%] mt-5 mb-6 leading-8 md:leading-6 text-base">
-          I'm a <span className="text-secondary">Software Engineer</span> with expertise in developing and deploying web
-          applications using technologies such as React, Node.js, and MongoDB.{" "}
-          <span className="text-secondary">Strong ability</span> to design, build and maintain RESTful APIs and deliver
-          efficient, scalable and maintainable solutions. <span className="text-secondary">Proven</span> track record of
-          leading cross-functional teams and delivering projects on time and to high standards.
+          I'm a <span className="text-secondary">Software Engineer</span> with
+          expertise in developing and deploying web applications using
+          technologies such as React, Node.js, and MongoDB.{" "}
+          <span className="text-secondary">Strong ability</span> to design,
+          build and maintain RESTful APIs and deliver efficient, scalable and
+          maintainable solutions. <span className="text-secondary">Proven</span>{" "}
+          track record of leading cross-functional teams and delivering projects
+          on time and to high standards.
         </p>
         <Button text="Check my resume" size="sm" />
       </div>
@@ -72,15 +79,19 @@ const Header = () => {
         <div className="w-[1px] h-[80px] bg-gray" />
       </div>
 
-      <div className="fixed bottom-0 right-16 hidden md:flex flex-col items-center gap-5">
+      <div className="fixed bottom-0 flex-col items-center hidden gap-5 right-16 md:flex">
         <motion.a
           href="mailto:alexander.joshua2018@gmail.com"
           whileHover={{ y: [0, -4] }}
           transition={{ duration: 0.2, type: "tween" }}
           rel="noreferrer"
           target="_blank"
-          className="text-gray font-sfmono tracking-wider text-xs hover:text-secondary cursor-pointer"
-          style={{ textOrientation: "sideways", writingMode: "vertical-rl", letterSpacing: "2px" }}
+          className="text-xs tracking-wider cursor-pointer text-gray font-sfmono hover:text-secondary"
+          style={{
+            textOrientation: "sideways",
+            writingMode: "vertical-rl",
+            letterSpacing: "2px",
+          }}
         >
           alexander.joshua2018@gmail.com
         </motion.a>
