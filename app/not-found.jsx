@@ -1,6 +1,11 @@
 import Link from "next/link";
 import React from "react";
 
+export const metadata = {
+  title: "Page Not Found",
+  description: "We think you may be lost",
+};
+
 const NotFoundPage = () => {
   return (
     <div className="flex items-center justify-center w-full h-screen">
