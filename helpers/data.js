@@ -73,6 +73,8 @@ export const tech = [
 ];
 
 export const companyName = [
+  { name: "247Bet", tab: "247bet" },
+  { name: "Pather", tab: "pather" },
   { name: "Nophin", tab: "nophin" },
   { name: "Landa", tab: "landa" },
   { name: "Radartrail", tab: "radartrail" },
@@ -81,11 +83,37 @@ export const companyName = [
   { name: "Softrays", tab: "softrays" },
 ];
 
+export const bet247 = {
+  company: "@ 247Bet",
+  position: "Senior Frontend Engineer",
+  period: "August 2025 - Present",
+  location: "Lagos State, Nigeria | On-site",
+  tasks: [
+    "Building the 247Bet web and mobile apps from scratch, shaping the product's look, feel, and ensuring optimal performance.",
+    "Guide the frontend team and mentor junior developers while keeping the codebase scalable and creative.",
+    "Implement modern frontend architecture using React.js and related technologies for web and mobile platforms.",
+    "Establish best practices and coding standards to ensure high-quality, maintainable code across the team.",
+  ],
+};
+
+export const pather = {
+  company: "@ Pather",
+  position: "Frontend Engineering Lead",
+  period: "August 2024 - April 2025",
+  location: "London, United Kingdom | Remote",
+  tasks: [
+    "Led the frontend team in delivering an intuitive and engaging user experience for Pather's platform, where learners could connect with industry experts to advance their skills.",
+    "Assigned tasks, conducted code reviews, and established coding standards that built a culture of excellence, boosting team productivity by 40% and accelerating feature delivery.",
+    "Advanced cutting-edge front-end technologies, including React, Next.js, and TypeScript, for better performance, accessibility, and scalability of the platform.",
+    "Achieved a 30% improvement in page load speed through optimization and best practices implementation.",
+  ],
+};
+
 export const nophin = {
   company: "@ Nophin",
   position: "Software Engineer",
-  period: "May 2023 - Present",
-  location: "NY, USA | Remote",
+  period: "May 2023 - October 2024",
+  location: "New York, USA | Remote",
   tasks: [
     "Frontend Lead: Defined the frontend architecture and technology stack to ensure efficiency and scalability.",
     "Established coding standards and best practices for consistent and maintainable code.",
@@ -128,7 +156,7 @@ export const softrays = {
 
 export const talkamnaija = {
   company: "@ TalkAmNaija",
-  position: "Frontend Develoer",
+  position: "Frontend Developer",
   period: "October 2021 - Present",
   location: "Tallin, Estonia",
   tasks: [
@@ -143,7 +171,7 @@ export const talkamnaija = {
 
 export const brooks = {
   company: "@ Brooks and Blake",
-  position: "Senior Frontend Develoer",
+  position: "Senior Frontend Developer",
   period: "May 2022 - August 2022",
   location: "Lagos, Nigeria",
   tasks: [
@@ -157,7 +185,7 @@ export const brooks = {
 
 export const radartrail = {
   company: "@ Radartrail",
-  position: "Software Enginner",
+  position: "Software Engineer",
   period: "August 2022 - Present",
   location: "Lagos, Nigeria",
   tasks: [

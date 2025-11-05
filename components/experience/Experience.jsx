@@ -3,17 +3,19 @@
 import { useState } from "react";
 import {
   companyName,
-  softrays,
-  talkamnaija,
-  brooks,
-  radartrail,
-  landa,
+  bet247,
+  pather,
   nophin,
+  landa,
+  radartrail,
+  brooks,
+  talkamnaija,
+  softrays,
 } from "../../helpers/data";
 import { ActiveWork, SectionTitle } from "..";
 
 const Experience = () => {
-  const [activeTab, setActiveTab] = useState("nophin");
+  const [activeTab, setActiveTab] = useState("247bet");
 
   return (
     <div
@@ -44,6 +46,8 @@ const Experience = () => {
           ))}
         </div>
 
+        {activeTab === "247bet" && <ActiveWork data={bet247} />}
+        {activeTab === "pather" && <ActiveWork data={pather} />}
         {activeTab === "nophin" && <ActiveWork data={nophin} />}
         {activeTab === "landa" && <ActiveWork data={landa} />}
         {activeTab === "radartrail" && <ActiveWork data={radartrail} />}
