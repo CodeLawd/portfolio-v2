@@ -3,9 +3,9 @@ import { GraphData, Project, ExperienceItem } from '@/types';
 // Engineer Profile from CV
 export const ENGINEER_PROFILE = {
   name: "Joshua Alexander",
-  title: "Software Engineer",
+  title: "Senior Software Engineer",
   experience: "6+",
-  bio: "I bring ideas to reality. Result-driven Software Engineer with 6+ years of experience building scalable web and mobile applications using React, Next.js, Node.js, and MongoDB. Proven track record of leading cross-functional teams and delivering efficient, maintainable solutions optimized for scale.",
+  bio: "Result-driven Software Engineer with 6+ years of experience building scalable web and mobile applications using React, Next.js, Node.js, and MongoDB. Proven track record of leading cross-functional teams and delivering efficient, maintainable solutions optimized for scale.",
   techStack: ["NextJS", "NestJS", "React Native", "TypeScript", "Python", "AWS", "LangChain", "Tailwind", "PostgreSQL"],
   location: "London, UK | Remote",
   email: "alexander.joshua2018@gmail.com",

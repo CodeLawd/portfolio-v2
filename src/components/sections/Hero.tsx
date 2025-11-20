@@ -1,6 +1,6 @@
 import React from "react";
 import { ENGINEER_PROFILE } from "@/config/data/portfolio";
-import { Github, Linkedin, Mail, Download } from "lucide-react";
+import { Github, Linkedin, Mail, Download, Globe, Smartphone, Server } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -11,6 +11,23 @@ export default function Hero() {
       <h2 className="text-xl text-zinc-400 font-medium mb-6">
         {ENGINEER_PROFILE.title}
       </h2>
+
+      {/* Full Stack Specializations */}
+      <div className="flex flex-wrap gap-3 mb-6">
+        <div className="flex items-center gap-2 px-3 py-1.5 bg-zinc-900/50 border border-zinc-800 rounded-lg text-sm">
+          <Globe className="w-4 h-4 text-[#fac748]" />
+          <span className="text-zinc-300 text-sm">Web</span>
+        </div>
+        <div className="flex items-center gap-2 px-3 py-1.5 bg-zinc-900/50 border border-zinc-800 rounded-lg text-sm">
+          <Smartphone className="w-4 h-4 text-[#fac748]" />
+          <span className="text-zinc-300 text-sm">Mobile</span>
+        </div>
+        <div className="flex items-center gap-2 px-3 py-1.5 bg-zinc-900/50 border border-zinc-800 rounded-lg text-sm">
+          <Server className="w-4 h-4 text-[#fac748]" />
+          <span className="text-zinc-300 text-sm">Backend</span>
+        </div>
+      </div>
+
       <p className="text-zinc-400 leading-relaxed max-w-xl mb-8 text-base">
         {ENGINEER_PROFILE.bio}
       </p>
