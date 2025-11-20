@@ -5,7 +5,7 @@ export const ENGINEER_PROFILE = {
   name: "Joshua Alexander",
   title: "Software Engineer",
   experience: "6+",
-  bio: "Result-driven Software Engineer with 5+ years of experience building scalable web and mobile applications using React, Next.js, Node.js (NestJS), and MongoDB. Specialized in backend architecture, AI integrations (LangChain), and cloud deployments.",
+  bio: "I bring ideas to reality. Result-driven Software Engineer with 6+ years of experience building scalable web and mobile applications using React, Next.js, Node.js, and MongoDB. Proven track record of leading cross-functional teams and delivering efficient, maintainable solutions optimized for scale.",
   techStack: ["NextJS", "NestJS", "React Native", "TypeScript", "Python", "AWS", "LangChain", "Tailwind", "PostgreSQL"],
   location: "London, UK | Remote",
   email: "alexander.joshua2018@gmail.com",
@@ -15,6 +15,19 @@ export const ENGINEER_PROFILE = {
 };
 
 export const EXPERIENCE_DATA: ExperienceItem[] = [
+  {
+    id: 0,
+    role: "Senior Frontend Engineer",
+    company: "247Bet",
+    period: "Present",
+    location: "Remote",
+    description: [
+      "Leading the frontend engineering team to build a robust and scalable betting platform.",
+      "Architecting high-performance user interfaces using React and Next.js.",
+      "Optimizing application performance for high-traffic scenarios."
+    ],
+    tech: ["React", "Next.js", "TypeScript", "Performance"]
+  },
   {
     id: 1,
     role: "Frontend Engineering Lead",
@@ -95,6 +108,19 @@ export const EXPERIENCE_DATA: ExperienceItem[] = [
       "Implemented features supporting citizen engagement with authorities."
     ],
     tech: ["Vue.js", "Tailwind", "JavaScript"]
+  },
+  {
+    id: 7,
+    role: "Lead Instructor & Developer",
+    company: "Softrays IT",
+    period: "2019 - 2021",
+    location: "Lagos, Nigeria",
+    description: [
+      "Served as Lead Instructor for web development programs, mentoring over 50 students.",
+      "Implemented training strategies that increased company revenue by 50%.",
+      "Developed official web applications for the company to automate training processes."
+    ],
+    tech: ["Teaching", "Web Development", "Mentorship"]
   }
 ];
 
@@ -171,7 +197,7 @@ export const PROJECTS: Project[] = [
     description: "AI Powered Commercial Real Estate Screening Analyst. Automates market research, document analysis, and report generation 24/7. Reduced manual analyst workload by 70%.",
     techStack: ["LangChain", "Python", "NestJS", "OpenAI", "Next.js"],
     role: "Lead Developer",
-    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1000&auto=format&fit=crop"
+    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1000&auto=format&fit=crop",
   },
   {
     id: 2,
@@ -183,19 +209,19 @@ export const PROJECTS: Project[] = [
   },
   {
     id: 3,
+    title: "Facile Learning",
+    description: "Tutorial-based learning platform where every course content is a tutorial ending with a project. Bridging the gap between theory and real-world coding.",
+    techStack: ["React", "Node.js", "MongoDB"],
+    role: "Full Stack Developer",
+    image: "https://images.unsplash.com/photo-1501504905252-473c47e087f8?q=80&w=1000&auto=format&fit=crop"
+  },
+  {
+    id: 4,
     title: "Pulse SaaS",
     description: "Employee engagement and performance management platform. Built scalable RESTful APIs and enabled tracking for 100+ employees.",
     techStack: ["Node.js", "React", "Redux", "MongoDB"],
     role: "Full Stack Lead",
     image: "https://images.unsplash.com/photo-1551434678-e076c2236033?q=80&w=1000&auto=format&fit=crop"
-  },
-  {
-    id: 4,
-    title: "TalkAmNaija",
-    description: "Civic engagement platform for citizen reporting. Developed responsive frontend architecture using Vue JS and Tailwind CSS.",
-    techStack: ["Vue.js", "Tailwind", "JavaScript"],
-    role: "Frontend Developer",
-    image: "https://images.unsplash.com/photo-1577563908411-5077b6dc7624?q=80&w=1000&auto=format&fit=crop"
   }
 ];
 
@@ -214,7 +240,7 @@ SOFTWARE ENGINEER
 PHONE: +2348144617911 | EMAIL: alexander.joshua2018@gmail.com | PORTFOLIO: https://codelawd.vercel.app
 GITHUB: https://github.com/codelawd | LINKEDIN: https://linkedin.com/in/codelawd
 
-Result-driven Software Engineer with 5+ years of experience building scalable web and mobile applications using React, Next.js, Node.js (NestJS/Express), and MongoDB. Specialized in backend architecture, AI integrations, and cloud deployments (AWS, GCP). Proven success leading teams, delivering high-impact products, and mentoring junior developers.
+I bring ideas to reality. Result-driven Software Engineer with 6+ years of experience building scalable web and mobile applications using React, Next.js, Node.js (NestJS/Express), and MongoDB. Specialized in backend architecture, AI integrations, and cloud deployments (AWS, GCP). Proven success leading teams, delivering high-impact products, and mentoring junior developers.
 
 Languages: JavaScript, TypeScript, Python
 Frontend: React (Next.JS), Tanstack Query, Tailwind, Chakra UI, Redux
@@ -227,6 +253,41 @@ AI/Agents: LangChain, LangGraph, Anthropic, OpenAI
 WORK/TECHNICAL EXPERIENCE:
 ${EXPERIENCE_TEXT}
 `;
+
+export const ARTICLES = [
+  {
+    id: 1,
+    title: "Scaling Frontend Architecture for Enterprise",
+    description: "Strategies for maintaining large-scale React applications, from module federation to strict boundary enforcement.",
+    date: "Oct 2024",
+    readTime: "8 min read",
+    link: "#"
+  },
+  {
+    id: 2,
+    title: "The Case for Server Components",
+    description: "Why moving logic to the server is the future of web performance, and how to adopt it incrementally.",
+    date: "Sep 2024",
+    readTime: "6 min read",
+    link: "#"
+  },
+  {
+    id: 3,
+    title: "Effective Engineering Leadership",
+    description: "Lessons learned transitioning from Senior Engineer to Lead. It's less about code and more about people.",
+    date: "Aug 2024",
+    readTime: "10 min read",
+    link: "#"
+  },
+  {
+    id: 4,
+    title: "Building Accessible AI Interfaces",
+    description: "Ensuring that the next generation of AI tools is usable by everyone, regardless of ability.",
+    date: "Jul 2024",
+    readTime: "5 min read",
+    link: "#"
+  }
+];
 
 export const SYSTEM_PROMPT = `
 You are the highly advanced AI assistant portfolio interface for Joshua Alexander.
